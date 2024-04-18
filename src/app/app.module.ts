@@ -5,10 +5,16 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import {MatToolbarModule} from "@angular/material/toolbar";
+import { LeistungenComponent } from './leistungen/leistungen.component';
+import { ImpressumComponent } from './impressum/impressum.component';
+import { DatenschutzerklaerungComponent } from './datenschutzerklaerung/datenschutzerklaerung.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    ImpressumComponent,
+    AppComponent,
+    LeistungenComponent,
+    DatenschutzerklaerungComponent
   ],
   imports: [
     BrowserModule,
@@ -17,6 +23,6 @@ import {MatToolbarModule} from "@angular/material/toolbar";
     MatToolbarModule,
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent]  // AppComponent
 })
 export class AppModule { }
