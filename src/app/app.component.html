@@ -47,7 +47,7 @@
 
 </style>
 
-<nav class="navbar navbar-expand-md sticky-top" (scroll)="onWindowScroll();">
+<nav class="navbar navbar-expand-md sticky-top" (scroll)="onWindowScroll();" id="willkommen">
   <div style="
   width: 1200px;
   /*background-color: yellowgreen;*/
@@ -56,11 +56,10 @@
       width="250"
       src="assets/images/janine_logo_2.png"
     />
-    <a href="#bear-logo">BEAR SOUP</a>
-    <span class="testSpan">Willkommen</span>
-    <span class="testSpan">Informationen</span>
-    <span class="testSpan">Pakete</span>
-    <span class="testSpan">Kontakt</span>
+    <a href="#willkommen" class="testSpan">Willkommen</a>
+    <a href="#information" class="testSpan">Informationen</a>
+    <a href="#Pakete" class="testSpan">Pakete</a>
+    <a href="#Kontakt" class="testSpan">Kontakt</a>
   </div>
 </nav>
 
@@ -138,20 +137,6 @@
 
 </div>
 
-<div style="height: 100px">
-</div>
-
-<div id="page-wrap">
-  <div class="testDiv">
-    <p class="testSpan2">
-      Perfekte Öffnungszeiten für Sie!
-    </p>
-    <p class="testSpan3">
-      Täglich von 7 bis 21 Uhr. Auch am Samstag.
-    </p>
-  </div>
-</div>
-
 <!--// Centering everything div-->
 <div style="max-width: 1200px;margin: 0 auto">
 
@@ -162,7 +147,8 @@
     align-items: flex-start;
     justify-content: space-between;
     margin: 120px 0;
-  ">
+  "
+  id="information">
 
     <div style="width: 600px;">
       <div style="font-family: gilroy;color: #b08720; font-size: 22px; text-align: left; width: 500px">
@@ -194,6 +180,38 @@
         und innovative Methoden für lang anhaltende
         Ergebnisse. Erlebe die perfekte Kombination aus
         Professionalität, Komfort und exklusiver Pflege.
+      </div>
+    </div>
+  </div>
+
+  <div style="
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: space-between;
+    margin: 120px 0;
+  ">
+
+    <div style="width: 600px;">
+      <div style="font-family: gilroy;color: #b08720; font-size: 22px; text-align: left; width: 500px">
+        <p>
+          Wir haben die perfekten Öffnungszeiten für Sie!
+        </p>
+      </div>
+      <div style="width: 150px;height: 7px; background-color: #b08720;"></div>
+    </div>
+
+    <div style="width: calc(100% - 600px)">
+      <div style="
+        font-family: gilroy;
+        color: dimgrey;
+        margin-top: 1%;
+          margin-bottom: 2%;
+        text-align: left;
+        flex:1;
+      ">
+        Von Montag bis Freitag sind wir von 7:00 bis 21:00 Uhr für Sie da. <br>
+        Je nach Absprache sind Termine auch samstags möglich.
       </div>
     </div>
   </div>
@@ -245,7 +263,8 @@
     align-items: flex-start;
     justify-content: space-between;
     margin: 120px 0;
-  ">
+  "
+  id="Pakete">
 
     <div style="width: 600px;">
       <div style="font-family: gilroy;color: #b08720; font-size: 22px; text-align: left; width: 500px">
@@ -319,7 +338,9 @@ background-color: #dfc291;
 color: black;
 justify-content: center;
 text-align: center;
-">
+"
+id="Kontakt"
+>
 
     <div style="padding-top: 5%">
         <img
