@@ -8,13 +8,15 @@ import {MatToolbarModule} from "@angular/material/toolbar";
 import { LeistungenComponent } from './leistungen/leistungen.component';
 import { ImpressumComponent } from './impressum/impressum.component';
 import { DatenschutzerklaerungComponent } from './datenschutzerklaerung/datenschutzerklaerung.component';
+import { HomeComponent } from './home/home.component';
 
 @NgModule({
   declarations: [
     ImpressumComponent,
     AppComponent,
     LeistungenComponent,
-    DatenschutzerklaerungComponent
+    DatenschutzerklaerungComponent,
+    HomeComponent
   ],
   imports: [
     BrowserModule,
