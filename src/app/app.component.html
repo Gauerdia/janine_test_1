@@ -4,6 +4,8 @@
     background-color: transparent;
     text-align: center;
     justify-content: center;
+    position: fixed;
+    top: 0px;
   }
 
   .navbar-inverse{
@@ -47,7 +49,7 @@
 
 </style>
 
-<nav class="navbar navbar-expand-md sticky-top" (scroll)="onWindowScroll();" id="willkommen">
+<nav class="navbar " (scroll)="onWindowScroll();" id="willkommen">
   <div style="
   width: 1200px;
   /*background-color: yellowgreen;*/
@@ -62,6 +64,10 @@
     <a href="#Kontakt" class="testSpan">Kontakt</a>
   </div>
 </nav>
+
+<div style="height: 120px">
+
+</div>
 
 <img
   class="imgBackground"
