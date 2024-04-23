@@ -21,5 +21,6 @@ export class AppComponent {
       element.classList.remove('navbar-inverse');
     }
   }
+  
 
 }

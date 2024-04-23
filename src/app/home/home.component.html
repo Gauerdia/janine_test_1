@@ -1,5 +1,7 @@
 <style>
 
+  
+
   .navbar{
     background-color: transparent;
     text-align: center;
@@ -48,39 +50,54 @@
     src: url(assets/fonts/Gilroy-Light.otf) format("opentype");
   }
 
+  a{
+    color:black;
+  }
+
+ 
+
 </style>
 
+<div id="moin" style="height: 0px"></div>
+
+
+
+
 <nav class="navbar" (scroll)="onWindowScroll();" id="welcome">
-
-
-
-  <div style="
-  width: 1200px;
-  /*background-color: yellowgreen;*/
-">
-
-
-    <img
-      width="250"
-      src="assets/images/janine_logo_2.png"
-    />
-    <a fragment="welcome" (click)="navigateToSection('welcome')" class="testSpan">Willkommen</a>
-    <a fragment="info" (click)="navigateToSection('info')" class="testSpan">Informationen</a>
-    <a fragment="packages" (click)="navigateToSection('packages')" class="testSpan">Pakete</a>
-    <a fragment="contact" (click)="navigateToSection('contact')" class="testSpan">Kontakt</a>
+  <!-- Übergeordneter Container, der das Logo und den Ankerlinks-Container umschließt -->
+  <div style="width: 1200px; text-align: center;">
+    <!-- Logo -->
+    <div style="margin-top: 10px; text-align: left;margin-left: 9%;">
+      <img
+        width="250"
+        src="assets/images/janine_logo_2.png"
+      />
+    </div>
+    <!-- Neuer Container, der die Ankerlinks enthält -->
+    <div style="margin-top: 10px; text-align: left;"> <!-- Die Ankerlinks bleiben linksbündig -->
+      <a fragment="welcome" (click)="navigateToSection('moin')" class="testSpan">Willkommen</a>
+      <a fragment="info" (click)="navigateToSection('test')" class="testSpan">Informationen</a>
+      <a fragment="packages" (click)="navigateToSection('ankerpaket')" class="testSpan">Pakete</a>
+      <a fragment="contact" (click)="navigateToSection('contact')" class="testSpan">Kontakt</a>
+    </div>
   </div>
 </nav>
 
-<div style="height: 120px">
+
+
+
+
+
+<div style="height: 80px">
 
 </div>
 
 <img
   class="imgBackground"
-  src="assets/images/white_teeth.webp"
+  src="assets/images/2.png"
 />
 
-<div style="height: 100px">
+<div style="height: 50px">
 
 </div>
 
@@ -97,12 +114,17 @@
     style="
     flex:1;
     float: left;
-">
+"
+id="test"
+>
     <h1 style="
       font-family: gilroy;
       color: #b08720;
 ">
-      Bleachings bei Janine – Professionelle und sichere Zahnaufhellung!
+      Lass deine Zähne für dich sprechen<br><strong>Mit einer professionellen Zahnaufhellung!</strong>
+
+
+
     </h1>
   </div>
   <div
@@ -112,19 +134,18 @@
   >
     <ul style="text-align: left; color: dimgrey; font-family: gilroy">
       <li>
-        <strong>Schonend</strong> und <strong>langfristig</strong> aufhellen (White-Effekt hält mehrere Jahre)
+        Sanfte und nachhaltige Aufhellung
       </li>
       <li>
-        Individuelles Whitening: 2 bis 8 Farbstufen(!) heller bis hin zum Super-Weiß
+        Individuelle Anpassung: Bis zu 12 Farbnuancen heller
+      <li>
+        Zertifizierte Bleaching-Expertin mit jahrelanger Erfahrung
       </li>
       <li>
-        Einzelne Zähne oder ganze Zahnreihen aufhellen
+        Stilvolles Ambiente für professionelle und komfortable Behandlungen
       </li>
       <li>
-        Schnell & Professionell durch spezielle Power-Bleaching-Technik
-      </li>
-      <li>
-        Individuelle Bleaching-Schiene für eine langanhaltende Zahn-Aufhellung zuhause (Home-Bleaching)
+        Schmerzfreie Behandlung dank schonender Methoden
       </li>
     </ul>
   </div>
@@ -141,16 +162,48 @@
   /*background-color: yellowgreen;*/
   margin: 0 auto;
   display: flex;
-">
+"
+id="faq"
 
-  <h1 style="font-family: gilroy;color: #b08720; font-size: 42px">
-    Wir beantworten all Ihre Fragen zu weißen <br> Zähnen mit Bleaching.
+>
+
+  <h1 style="font-family: gilroy;color: #b08720; font-size: 43px">
+    Wir beantworten Ihre Fragen zur Zahnaufhellung
   </h1>
 
 </div>
 
 <!--// Centering everything div-->
-<div style="max-width: 1200px;margin: 0 auto">
+<div style="max-width: 1200px;margin:1%;">
+
+
+  <div style="font-family: gilroy;color: #b08720; font-size: 22px; text-align: left;">
+    Warum überhaupt Zahnaufhellung?
+</div>
+<div style="font-family: gilroy; color: dimgrey; margin-top: 1%; margin-bottom: 1%; text-align: left;">
+    Ein strahlendes Lächeln steigert Ihr Selbstvertrauen und sorgt für einen positiven ersten Eindruck. Unsere professionelle Zahnaufhellung verleiht Ihnen weißere Zähne in nur einer Sitzung – schonend, sicher und effektiv. Entdecken Sie, wie ein heller Glanz Ihre Ausstrahlung und Lebensqualität verbessern kann!
+</div>
+<br>
+<div style="font-family: gilroy;color: #b08720; font-size: 22px; text-align: left;">
+    Warum Elegance-Smile?
+</div>
+<div style="font-family: gilroy; color: dimgrey; margin-top: 1%; margin-bottom: 1%; text-align: left;">
+    Unser Studio bietet Ihnen eine exklusive Zahnaufhellung mit modernsten Methoden und einem hohen Hygienestandard. Unsere zertifizierte Bleaching-Expertin verfügt über jahrelange Erfahrung, um Ihnen ein strahlendes Ergebnis zu garantieren. Vertrauen Sie auf Elegance Smile für schonende, effektive Aufhellung und höchste Professionalität.
+</div>
+<br>
+<div style="font-family: gilroy;color: #b08720; font-size: 22px; text-align: left;">
+    Aber tut das nicht weh?
+</div>
+<div style="font-family: gilroy; color: dimgrey; margin-top: 1%; margin-bottom: 1%; text-align: left;"
+>
+    Keine Sorge, unsere professionelle Zahnaufhellung ist völlig schmerzfrei! Dank schonender Methoden genießen Sie ein komfortables Erlebnis und erzielen strahlende Ergebnisse – ganz ohne Beschwerden.
+</div>
+<br>
+<div style="font-family: gilroy;color: #b08720; font-size: 22px; text-align: left;" id="ankerpaket"
+>
+    Gerne beantworten stehen wir Ihnen für weitere Fragen zur Verfügung. Kontaktieren Sie uns!
+</div>
+
 
 
   <div style="
@@ -158,136 +211,23 @@
     flex-wrap: wrap;
     align-items: flex-start;
     justify-content: space-between;
-    margin: 120px 0;
+    margin: 15% 10%;
   "
-       id="info">
+       >
 
     <div style="width: 600px;">
-      <div style="font-family: gilroy;color: #b08720; font-size: 22px; text-align: left; width: 500px">
-        <p>
-          Ein Lächeln wie aus dem Magazin: <br> Erleben Sie Premium-Bleaching in Dortmund!
-        </p>
-      </div>
-      <div style="width: 150px;height: 7px; background-color: #b08720;"></div>
-    </div>
-
-    <div style="width: calc(100% - 600px)">
-      <div style="
-        font-family: gilroy;
-        color: dimgrey;
-        margin-top: 1%;
-          margin-bottom: 2%;
-        text-align: left;
-        flex:1;
-      ">
-        Entdecke bei uns in Dortmund das Geheimnis eines
-        blendend weißen Lächelns. Für die anspruchsvolle
-        Generation 18+ bieten wir modernste Bleaching-
-        Technologien. Unser Studio vereint vertrauensvolle
-        Atmosphäre mit stilvollem Design, um dir ein unvergleichliches
-        Pflegeerlebnis zu bieten. Genieße unsere
-        individuellen Beratungen und maß geschneiderten
-        Behandlungen, die perfekt auf deine Bedürfnisse
-        abgestimmt sind. Wir setzen auf hochwertige Produkte
-        und innovative Methoden für lang anhaltende
-        Ergebnisse. Erlebe die perfekte Kombination aus
-        Professionalität, Komfort und exklusiver Pflege.
-      </div>
-    </div>
-  </div>
-
-  <div style="
-    display: flex;
-    flex-wrap: wrap;
-    align-items: flex-start;
-    justify-content: space-between;
-    margin: 120px 0;
-  ">
-
-    <div style="width: 600px;">
-      <div style="font-family: gilroy;color: #b08720; font-size: 22px; text-align: left; width: 500px">
-        <p>
-          Wir haben die perfekten Öffnungszeiten für Sie!
-        </p>
-      </div>
-      <div style="width: 150px;height: 7px; background-color: #b08720;"></div>
-    </div>
-
-    <div style="width: calc(100% - 600px)">
-      <div style="
-        font-family: gilroy;
-        color: dimgrey;
-        margin-top: 1%;
-          margin-bottom: 2%;
-        text-align: left;
-        flex:1;
-      ">
-        Von Montag bis Freitag sind wir von 7:00 bis 21:00 Uhr für Sie da. <br>
-        Je nach Absprache sind Termine auch samstags möglich.
-      </div>
-    </div>
-  </div>
-
-  <div style="
-    display: flex;
-    flex-wrap: wrap;
-    align-items: flex-start;
-    justify-content: space-between;
-    margin: 120px 0;
-  ">
-
-    <div style="width: 600px;">
-      <div style="font-family: gilroy;color: #b08720; font-size: 22px; text-align: left; width: 500px">
-        <p>
-          Wichtige Informationen zur Behandlung
-        </p>
-      </div>
-      <div style="width: 150px;height: 7px; background-color: #b08720;"></div>
-    </div>
-
-    <div style="width: calc(100% - 600px)">
-      <div style="
-        font-family: gilroy;
-        color: dimgrey;
-        margin-top: 1%;
-          margin-bottom: 2%;
-        text-align: left;
-        flex:1;
-      ">
-        Eine kosmetische Zahnaufhellung funktioniert am Besten
-        bei natürlichen Zähnen. Zu beachten sind Zahnersatz,
-        Kronen, Veneers oder Füllungen. Diese werden
-        wieder in ihren ursprünglichen Farbton aufgehellt.
-        Direkt nach der Behandlung empfehlen wir zwei
-        Stunden auf Essen und Trinken zu verzichten, da die
-        Wirkstoffe noch nachwirken.
-        Die Behandlung darf nicht bei Schwangeren oder
-        Frauen in der Stillzeit, sowie Patienten mit Chemotherapie
-        durchgeführt werden.
-      </div>
-    </div>
-  </div>
-
-
-  <div style="
-    display: flex;
-    flex-wrap: wrap;
-    align-items: flex-start;
-    justify-content: space-between;
-    margin: 120px 0;
-  "
-       id="packages">
-
-    <div style="width: 600px;">
-      <div style="font-family: gilroy;color: #b08720; font-size: 22px; text-align: left; width: 500px">
+      <div style="font-family: gilroy;color: #b08720; font-size: 22px; margin-left: 0%; width: 500px">
         <p>
           Unsere Pakete
         </p>
       </div>
-      <div style="width: 150px;height: 7px; background-color: #b08720;"></div>
+      
+      <div style="width: 150px;height: 7px; background-color: #b08720;margin-left: 29%;"></div>
     </div>
+    
 
-    <div style="width: calc(100% - 600px)">
+    <div style="width: calc(100% - 600px)"
+    >
       <div style="
         font-family: gilroy;
         color: dimgrey;
@@ -296,7 +236,7 @@
         text-align: left;
         flex:1;
       ">
-        <div style="margin-top: 5%;">
+        <div style="margin-top: 3%;">
           <p style="color: #b08720">ELEGANCE SMILE LIGHT</p>
           <p>
             Zahnaufhellung in 40 Minuten<br>
@@ -309,12 +249,14 @@
           </div>
         </div>
 
-        <div style="margin-top: 5%;">
-          <p style="color: #b08720">ELEGANCE SMILE LIGHT</p>
+        <div style="margin-top: 3%;">
+          <p style="color: #b08720">ELEGANCE SMILE PREMIUM</p>
           <p>
-            Zahnaufhellung in 40 Minuten<br>
-            Zwei Gel-Anwendungen <br>
-            Aufhellung bis zu 5-6 Farbnuancen
+            Unsere Premium Zahnaufhellung<br>
+            von uns empfohlen<br>
+            Zahnaufhellung in 60 Minuten<br>
+            Drei Gel-Anwendungen<br>
+            Aufhellung bis zu 7-8 Farbnuancen
           </p>
           <div style="flex: 1; text-align: left">
             <p style="color: #b08720">169,00 €</p>
@@ -322,26 +264,31 @@
           </div>
         </div>
 
-        <div style="margin-top: 5%;">
-          <p style="color: #b08720">ELEGANCE SMILE LIGHT</p>
+        <div style="margin-top: 3%;">
+          <p style="color: #b08720">ELEGANCE SMILE ULTRA</p>
           <p>
-            Zahnaufhellung in 40 Minuten<br>
-            Zwei Gel-Anwendungen <br>
-            Aufhellung bis zu 5-6 Farbnuancen
+            Unser Ultra Paket<br>
+            Zahnaufhellung in 80 Minuten<br>
+            drei Gel-Anwendungen<br>
+            Aufhellung bis zu 12 Farbnuancen
           </p>
           <div style="flex: 1; text-align: left">
             <p style="color: #b08720">219,00 €</p>
             <div style="width: 50px;height: 7px; background-color: #b08720;margin-top: -15px "></div>
           </div>
         </div>
-
-
       </div>
-    </div>
+      
+      </div>
+      
   </div>
 
 </div>
 
+<img
+  width="300"
+  src="assets/images/circle.png"
+  style="margin-left: -480px; margin-top: -500px;">
 
 
 <div style="
@@ -357,6 +304,7 @@
   <div style="padding-top: 5%">
     <img
       width="250"
+      style="margin-top: 0%, margin-bottom: 0%"
       src="assets/images/janine_logo_inverse.png"
     />
   </div>
@@ -395,6 +343,7 @@
         <a routerLink="/datenschutz" routerLinkActive="active">Datenschutzerklärung</a>
       </div>
     </div>
+    
   </div>
 
 </div>
