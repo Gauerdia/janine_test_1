@@ -243,11 +243,18 @@
       />
     </div>
     <!-- Neuer Container, der die Ankerlinks enthält -->
-    <div class="navAnchors"> <!-- Die Ankerlinks bleiben linksbündig -->
-      <a fragment="welcome" (click)="navigateToSection('moin')" class="testSpan">Willkommen</a>
-      <a fragment="info" (click)="navigateToSection('test')" class="testSpan">Informationen</a>
-      <a fragment="packages" (click)="navigateToSection('ankerpaket')" class="testSpan">Pakete</a>
-      <a fragment="contact" (click)="navigateToSection('contact')" class="testSpan">Kontakt</a>
+<!--    <div class="navAnchors"> &lt;!&ndash; Die Ankerlinks bleiben linksbündig &ndash;&gt;-->
+<!--      <a fragment="welcome" (click)="navigateToSection('moin')" class="testSpan">Willkommen</a>-->
+<!--      <a fragment="info" (click)="navigateToSection('test')" class="testSpan">Informationen</a>-->
+<!--      <a fragment="packages" (click)="navigateToSection('ankerpaket')" class="testSpan">Pakete</a>-->
+<!--      <a fragment="contact" (click)="navigateToSection('contact')" class="testSpan">Kontakt</a>-->
+<!--    </div>-->
+    <div style="margin-top: 10px; text-align: left;">
+      <!-- Die Ankerlinks bleiben linksbündig -->
+      <a href="#welcome" class="testSpan" onclick="event.preventDefault(); document.querySelector('#moin').scrollIntoView({ behavior: 'smooth' });">Willkommen</a>
+      <a href="#info" class="testSpan" onclick="event.preventDefault(); document.querySelector('#info').scrollIntoView({ behavior: 'smooth' });">Informationen</a>
+      <a href="#packages" class="testSpan" onclick="event.preventDefault(); document.querySelector('#packages').scrollIntoView({ behavior: 'smooth' });">Pakete</a>
+      <a href="#contact" class="testSpan" onclick="event.preventDefault(); document.querySelector('#contact').scrollIntoView({ behavior: 'smooth' });">Kontakt</a>
     </div>
   </div>
 </nav>
