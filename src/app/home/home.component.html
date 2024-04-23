@@ -1,7 +1,6 @@
 <style>
 
 
-
   .navbar{
     background-color: transparent;
     text-align: center;
@@ -77,28 +76,174 @@
   }
 
 
+  .nav1{
+    width: 1200px;
+    text-align: center;
+  }
 
+  .navLogo{
+    margin-top: 10px;
+    text-align: left;
+    margin-left: 9%;
+  }
 
+  .navAnchors{
+    margin-top: 10px;
+    text-align: left;
+  }
+
+  .spacer1{
+    height: 80px
+  }
+  .spacer2{
+    height: 50px
+  }
+  .spacer3{
+    height: 100px
+  }
+
+  .mainText1{
+    justify-content: center;
+    align-items: center;
+    width: 1200px;
+    margin: 0 auto;
+    display: flex;
+  }
+  .mainText2{
+    justify-content: center;
+    align-items: center;
+    width: 1200px;
+    margin: 0 auto;
+    display: flex;
+  }
+  .mainText1Flex{
+    flex:1;
+    float: left;
+  }
+  .mainText1FlexRight{
+    flex:1;
+  }
+  .headline1{
+    font-family: gilroy;
+    color: #b08720;
+  }
+  .headline2{
+    font-family: gilroy;
+    color: #b08720;
+    font-size: 43px
+  }
+
+  .enum1{
+    text-align: left;
+    color: dimgrey;
+    font-family: gilroy
+  }
+
+  .centerDiv{
+    max-width: 1200px;
+    margin: 0 auto;
+    padding-top: 3%
+  }
+
+  .question1{
+    font-family: gilroy;
+    color: #b08720;
+    font-size: 22px;
+    text-align: left;
+  }
+
+  .answer1{
+    font-family: gilroy;
+    color: dimgrey;
+    margin-top: 1%;
+    margin-bottom: 1%;
+    text-align: left;
+  }
+
+  .paketeMainDiv{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: space-between;
+    margin: 15% 10%;
+  }
+
+  .paketeWidthDiv{
+    width: 600px;
+  }
+
+  .paketeHeadline{
+    font-family: gilroy;
+    color: #b08720;
+    font-size: 22px;
+    margin-left: 0%;
+    width: 500px;
+    margin-left: 10%;
+  }
+
+  .unterstrich1{
+    width: 150px;
+    height: 7px;
+    background-color: #b08720;
+    margin-left: 35%;
+  }
+
+  .paketeImageWidthDiv{
+    height: 150px
+  }
+  .paketeImageWidth{
+    width: 300px;
+  }
+
+  .paketeOffersWidth{
+    width: calc(100% - 600px)
+  }
+  .paketeOffersGeneral{
+    font-family: gilroy;
+    color: dimgrey;
+    margin-top: 1%;
+    margin-bottom: 2%;
+    text-align: left;
+    flex:1;
+  }
+
+  .paketePaddingTopDiv{
+    margin-top: 3%;
+  }
+  .paketeOffersHeadlineColor{
+    color: #b08720
+  }
+  .paketeOffersFlex{
+    flex: 1;
+    text-align: left
+  }
+  .paketeOffersUnterstrich{
+    width: 50px;
+    height: 7px;
+    background-color: #b08720;
+    margin-top: -15px
+  }
 
 </style>
 
+
+<!--BEN Test-->
 <div id="moin" style="height: 0px"></div>
 
-
-
-
+<!--NAVBAR-->
 <nav class="navbar" (scroll)="onWindowScroll();" id="welcome">
+
   <!-- Übergeordneter Container, der das Logo und den Ankerlinks-Container umschließt -->
-  <div style="width: 1200px; text-align: center;">
+  <div class="nav1">
     <!-- Logo -->
-    <div style="margin-top: 10px; text-align: left;margin-left: 9%;">
+    <div class="navLogo">
       <img
         width="250"
         src="assets/images/janine_logo_2.png"
       />
     </div>
     <!-- Neuer Container, der die Ankerlinks enthält -->
-    <div style="margin-top: 10px; text-align: left;"> <!-- Die Ankerlinks bleiben linksbündig -->
+    <div class="navAnchors"> <!-- Die Ankerlinks bleiben linksbündig -->
       <a fragment="welcome" (click)="navigateToSection('moin')" class="testSpan">Willkommen</a>
       <a fragment="info" (click)="navigateToSection('test')" class="testSpan">Informationen</a>
       <a fragment="packages" (click)="navigateToSection('ankerpaket')" class="testSpan">Pakete</a>
@@ -107,60 +252,32 @@
   </div>
 </nav>
 
-
-
-
-
-
-<div style="height: 80px">
-
-</div>
+<!--SPACE TO TOP-->
+<div class="spacer1"></div>
 
 <img
   class="imgBackground"
   src="assets/images/2.png"
 />
 
-<div style="height: 50px">
-
-</div>
+<div class="spacer2"></div>
 
 <div class="example">
   Testest
 </div>
 
-<div
-  style="
-  justify-content: center;
-  align-items: center;
-  width: 1200px;
-  /*background-color: yellowgreen;*/
-  margin: 0 auto;
-  display: flex;
-">
-  <div
-    style="
-    flex:1;
-    float: left;
-"
-id="test"
->
-    <h1 style="
-      font-family: gilroy;
-      color: #b08720;
-">
+<div class="mainText1">
+
+<!--  Headline-->
+  <div class="mainText1Flex" id="test">
+    <h1 class="headline1">
       Lass deine Zähne für dich sprechen<br><strong>Mit einer professionellen Zahnaufhellung!</strong>
-
-
-
     </h1>
   </div>
-  <div
-    style="
-      flex:1;
-"
-  >
-    <ul style="text-align: left; color: dimgrey; font-family: gilroy">
+
+<!--  Aufzählung-->
+  <div class="mainText1FlexRight">
+    <ul class="enum1">
       <li>
         Sanfte und nachhaltige Aufhellung
       </li>
@@ -177,128 +294,85 @@ id="test"
       </li>
     </ul>
   </div>
+
 </div>
 
-<div style="height: 100px">
-</div>
+<div class="spacer3"></div>
 
-<div
-  style="
-  justify-content: center;
-  align-items: center;
-  width: 1200px;
-  /*background-color: yellowgreen;*/
-  margin: 0 auto;
-  display: flex;
-"
-id="faq"
+<div class="mainText2" id="faq">
 
->
-
-  <h1 style="font-family: gilroy;color: #b08720; font-size: 43px">
+  <h1 class="headline2">
     Wir beantworten Ihre Fragen zur Zahnaufhellung
   </h1>
 
 </div>
 
 <!--// Centering everything div-->
-<div style="max-width: 1200px;margin: 0 auto;padding-top: 3%">
+<div class="centerDiv">
 
-
-  <div style="font-family: gilroy;color: #b08720; font-size: 22px; text-align: left;">
+  <div class="question1">
     Warum überhaupt Zahnaufhellung?
-</div>
-<div style="font-family: gilroy; color: dimgrey; margin-top: 1%; margin-bottom: 1%; text-align: left;">
+  </div>
+
+<div class="answer1">
     Ein strahlendes Lächeln steigert Ihr Selbstvertrauen und sorgt für einen positiven ersten Eindruck. Unsere professionelle Zahnaufhellung verleiht Ihnen weißere Zähne in nur einer Sitzung – schonend, sicher und effektiv. Entdecken Sie, wie ein heller Glanz Ihre Ausstrahlung und Lebensqualität verbessern kann!
 </div>
 <br>
-<div style="font-family: gilroy;color: #b08720; font-size: 22px; text-align: left;">
+<div class="question1">
     Warum Elegance-Smile?
 </div>
-<div style="font-family: gilroy; color: dimgrey; margin-top: 1%; margin-bottom: 1%; text-align: left;">
+<div class="answer1">
     Unser Studio bietet Ihnen eine exklusive Zahnaufhellung mit modernsten Methoden und einem hohen Hygienestandard. Unsere zertifizierte Bleaching-Expertin verfügt über jahrelange Erfahrung, um Ihnen ein strahlendes Ergebnis zu garantieren. Vertrauen Sie auf Elegance Smile für schonende, effektive Aufhellung und höchste Professionalität.
 </div>
 <br>
-<div style="font-family: gilroy;color: #b08720; font-size: 22px; text-align: left;">
+<div class="question1">
     Aber tut das nicht weh?
 </div>
-<div style="font-family: gilroy; color: dimgrey; margin-top: 1%; margin-bottom: 1%; text-align: left;"
->
+<div class="answer1">
     Keine Sorge, unsere professionelle Zahnaufhellung ist völlig schmerzfrei! Dank schonender Methoden genießen Sie ein komfortables Erlebnis und erzielen strahlende Ergebnisse – ganz ohne Beschwerden.
 </div>
 <br>
-<div style="font-family: gilroy;color: #b08720; font-size: 22px; text-align: left;" id="ankerpaket"
->
+<div class="question1" id="ankerpaket">
     Gerne beantworten stehen wir Ihnen für weitere Fragen zur Verfügung. Kontaktieren Sie uns!
 </div>
 
 
 
-  <div style="
-    display: flex;
-    flex-wrap: wrap;
-    align-items: flex-start;
-    justify-content: space-between;
-    margin: 15% 10%;
-  "
-       >
-
-    <div style="width: 600px;">
-
-      <div style="
-      font-family: gilroy;
-      color: #b08720;
-      font-size: 22px;
-      margin-left: 0%;
-      width: 500px;
-      margin-left: 10%;
-      ">
+  <div class="paketeMainDiv">
+    <div class="paketeWidthDiv">
+      <div class="paketeHeadline">
         <p>
           Unsere Pakete
         </p>
-        <div style="
-        width: 150px;
-        height: 7px;
-         background-color: #b08720;
-         margin-left: 35%;"></div>
-
+        <div class="unterstrich1"></div>
       </div>
 
-
-
-      <div style="height: 150px"></div>
+      <div class="paketeImageWidthDiv"></div>
         <img
-          width="300"
+          class="paketeImageWidth"
           src="assets/images/circle.png"
-          style="">
+        >
     </div>
 
 
-    <div style="width: calc(100% - 600px)"
-    >
-      <div style="
-        font-family: gilroy;
-        color: dimgrey;
-        margin-top: 1%;
-          margin-bottom: 2%;
-        text-align: left;
-        flex:1;
-      ">
-        <div style="margin-top: 3%;">
-          <p style="color: #b08720">ELEGANCE SMILE LIGHT</p>
+    <div class="paketeOffersWidth">
+
+      <div class="paketeOffersGeneral">
+        <div class="paketePaddingTopDiv">
+          <p class="paketeOffersHeadlineColor">ELEGANCE SMILE LIGHT</p>
           <p>
             Zahnaufhellung in 40 Minuten<br>
             Zwei Gel-Anwendungen <br>
             Aufhellung bis zu 5-6 Farbnuancen
           </p>
-          <div style="flex: 1; text-align: left">
-            <p style="color: #b08720">99,00 €</p>
-            <div style="width: 50px;height: 7px; background-color: #b08720;margin-top: -15px "></div>
+          <div class="paketeOffersFlex">
+            <p class="paketeOffersHeadlineColor">99,00 €</p>
+            <div class="paketeOffersUnterstrich"></div>
           </div>
         </div>
 
-        <div style="margin-top: 3%;">
-          <p style="color: #b08720">ELEGANCE SMILE PREMIUM</p>
+        <div class="paketePaddingTopDiv">
+          <p class="paketeOffersHeadlineColor">ELEGANCE SMILE PREMIUM</p>
           <p>
             Unsere Premium Zahnaufhellung<br>
             von uns empfohlen<br>
@@ -306,23 +380,23 @@ id="faq"
             Drei Gel-Anwendungen<br>
             Aufhellung bis zu 7-8 Farbnuancen
           </p>
-          <div style="flex: 1; text-align: left">
-            <p style="color: #b08720">169,00 €</p>
-            <div style="width: 50px;height: 7px; background-color: #b08720;margin-top: -15px "></div>
+          <div class="paketeOffersFlex">
+            <p class="paketeOffersHeadlineColor">169,00 €</p>
+            <div class="paketeOffersUnterstrich"></div>
           </div>
         </div>
 
-        <div style="margin-top: 3%;">
-          <p style="color: #b08720">ELEGANCE SMILE ULTRA</p>
+        <div class="paketePaddingTopDiv">
+          <p class="paketeOffersHeadlineColor">ELEGANCE SMILE ULTRA</p>
           <p>
             Unser Ultra Paket<br>
             Zahnaufhellung in 80 Minuten<br>
             drei Gel-Anwendungen<br>
             Aufhellung bis zu 12 Farbnuancen
           </p>
-          <div style="flex: 1; text-align: left">
-            <p style="color: #b08720">219,00 €</p>
-            <div style="width: 50px;height: 7px; background-color: #b08720;margin-top: -15px "></div>
+          <div class="paketeOffersFlex">
+            <p class="paketeOffersHeadlineColor">219,00 €</p>
+            <div class="paketeOffersUnterstrich"></div>
           </div>
         </div>
       </div>
