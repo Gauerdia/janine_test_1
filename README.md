@@ -1,4 +1,7 @@
 
+
+ng build --aot
+
 Domain: http://elegance-smile.de/
 
 Vorlagen:

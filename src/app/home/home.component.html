@@ -1,262 +1,3 @@
-<style>
-
-
-  .navbar{
-    background-color: transparent;
-    text-align: center;
-    justify-content: center;
-    position: fixed;
-    top: 0px;
-    width: 100%;
-  }
-
-  .navbar-inverse{
-    background-color: white;
-    opacity: 0.9;
-    -webkit-transition: background-color 200ms linear;
-    -ms-transition: background-color 200ms linear;
-    transition: background-color 200ms linear;
-  }
-
-  .imgBackground {
-    width: 100%;
-    height: auto;
-    margin-top: -125px;
-  }
-
-  #page-wrap {
-    text-align: left;
-    width: 800px;
-    margin: 0 auto;
-  }
-
-  .testSpan{
-    margin-left: 2%;
-    font-size: 18px;
-    color: black;
-  }
-
-  .testSpan:hover{
-    color: #b08720;
-  }
-
-  ul li {
-    margin-bottom: 5px;
-  }
-
-  @font-face {
-    font-family: gilroy;
-    src: url(assets/fonts/Gilroy-Light.otf) format("opentype");
-  }
-
-  a{
-    color:black;
-  }
-
-
-  @media screen and (max-width: 575px) {
-    .example{
-      /*font-size: 42px;*/
-      color: red;
-      font-size: 42px;
-    }
-  }
-
-  @media screen and (max-width: 900px) and (min-width: 576px){
-    .example{
-      /*font-size: 22px;*/
-      color: green;
-    }
-  }
-  @media screen and (min-width: 901px){
-    .example{
-      /*font-size: 12px;*/
-      color: yellow;
-    }
-  }
-
-
-  .nav1{
-    width: 1200px;
-    text-align: center;
-  }
-
-  .navLogo{
-    margin-top: 10px;
-    text-align: left;
-    margin-left: 9%;
-  }
-
-  .navAnchors{
-    margin-top: 10px;
-    text-align: left;
-  }
-
-  .spacer1{
-    height: 80px
-  }
-  .spacer2{
-    height: 50px
-  }
-  .spacer3{
-    height: 100px
-  }
-
-  .mainText1{
-    justify-content: center;
-    align-items: center;
-    width: 1200px;
-    margin: 0 auto;
-    display: flex;
-  }
-  .mainText2{
-    justify-content: center;
-    align-items: center;
-    width: 1200px;
-    margin: 0 auto;
-    display: flex;
-  }
-  .mainText1Flex{
-    flex:1;
-    float: left;
-  }
-  .mainText1FlexRight{
-    flex:1;
-  }
-  .headline1{
-    font-family: gilroy;
-    color: #b08720;
-  }
-  .headline2{
-    font-family: gilroy;
-    color: #b08720;
-    font-size: 43px
-  }
-
-  .enum1{
-    text-align: left;
-    color: dimgrey;
-    font-family: gilroy
-  }
-
-  .centerDiv{
-    max-width: 1200px;
-    margin: 0 auto;
-    padding-top: 3%
-  }
-
-  .question1{
-    font-family: gilroy;
-    color: #b08720;
-    font-size: 22px;
-    text-align: left;
-  }
-
-  .answer1{
-    font-family: gilroy;
-    color: dimgrey;
-    margin-top: 1%;
-    margin-bottom: 1%;
-    text-align: left;
-  }
-
-  .paketeMainDiv{
-    display: flex;
-    flex-wrap: wrap;
-    align-items: flex-start;
-    justify-content: space-between;
-    margin: 15% 10%;
-  }
-
-  .paketeWidthDiv{
-    width: 600px;
-  }
-
-  .paketeHeadline{
-    font-family: gilroy;
-    color: #b08720;
-    font-size: 22px;
-    margin-left: 0%;
-    width: 500px;
-    margin-left: 10%;
-  }
-
-  .unterstrich1{
-    width: 150px;
-    height: 7px;
-    background-color: #b08720;
-    margin-left: 35%;
-  }
-
-  .paketeImageWidthDiv{
-    height: 150px
-  }
-  .paketeImageWidth{
-    width: 300px;
-  }
-
-  .paketeOffersWidth{
-    width: calc(100% - 600px)
-  }
-  .paketeOffersGeneral{
-    font-family: gilroy;
-    color: dimgrey;
-    margin-top: 1%;
-    margin-bottom: 2%;
-    text-align: left;
-    flex:1;
-  }
-
-  .paketePaddingTopDiv{
-    margin-top: 3%;
-  }
-  .paketeOffersHeadlineColor{
-    color: #b08720
-  }
-  .paketeOffersFlex{
-    flex: 1;
-    text-align: left
-  }
-  .paketeOffersUnterstrich{
-    width: 50px;
-    height: 7px;
-    background-color: #b08720;
-    margin-top: -15px
-  }
-
-
-
-  .contact1{
-    height: 500px;
-    background-color: #dfc291;
-    color: black;
-    justify-content: center;
-    text-align: center;
-  }
-  .contactPadding{
-    padding-top: 5%
-  }
-  .contactPadding2{
-    padding-top: 2%
-  }
-  .contactLogo{
-    width:250px;
-    margin-top: 0%;
-    margin-bottom: 0%
-  }
-  .contactWholeWidth{
-    width: 100%
-  }
-  .contactDisplayFlex{
-    display: flex;
-  }
-  .contactFlex{
-    flex:1
-  }
-
-</style>
-
-
 <!--BEN Test-->
 <div id="moin" style="height: 0px"></div>
 
@@ -268,17 +9,11 @@
     <!-- Logo -->
     <div class="navLogo">
       <img
-        width="250"
+        class="logo_image"
         src="assets/images/janine_logo_2.png"
       />
     </div>
-    <!-- Neuer Container, der die Ankerlinks enthält -->
-<!--    <div class="navAnchors"> &lt;!&ndash; Die Ankerlinks bleiben linksbündig &ndash;&gt;-->
-<!--      <a fragment="welcome" (click)="navigateToSection('moin')" class="testSpan">Willkommen</a>-->
-<!--      <a fragment="info" (click)="navigateToSection('test')" class="testSpan">Informationen</a>-->
-<!--      <a fragment="packages" (click)="navigateToSection('ankerpaket')" class="testSpan">Pakete</a>-->
-<!--      <a fragment="contact" (click)="navigateToSection('contact')" class="testSpan">Kontakt</a>-->
-<!--    </div>-->
+
     <div style="margin-top: 10px; text-align: left;">
       <!-- Die Ankerlinks bleiben linksbündig -->
       <a href="#welcome" class="testSpan" onclick="event.preventDefault(); document.querySelector('#moin').scrollIntoView({ behavior: 'smooth' });">Willkommen</a>
@@ -292,16 +27,22 @@
 <!--SPACE TO TOP-->
 <div class="spacer1"></div>
 
-<img
-  class="imgBackground"
-  src="assets/images/2.png"
-/>
+<div class="headerBGImage">
+  <img
+    class="imgBackground"
+    src="assets/images/2.png"
+  />
+</div>
 
 <div class="spacer2"></div>
 
-<div class="example">
-  Testest
-</div>
+<!--<div class="example">-->
+<!--  Testest-->
+<!--</div>-->
+
+<!--<div class="test1" style="width: 100%">-->
+<!--  fewfe-->
+<!--</div>-->
 
 <div class="mainText1">
 
@@ -397,11 +138,13 @@
       <div class="paketeOffersGeneral">
         <div class="paketePaddingTopDiv">
           <p class="paketeOffersHeadlineColor">ELEGANCE SMILE LIGHT</p>
-          <p>
-            Zahnaufhellung in 40 Minuten<br>
-            Zwei Gel-Anwendungen <br>
-            Aufhellung bis zu 5-6 Farbnuancen
-          </p>
+          <div class="paketeOffersMainText">
+            <p>
+              Zahnaufhellung in 40 Minuten<br>
+              Zwei Gel-Anwendungen <br>
+              Aufhellung bis zu 5-6 Farbnuancen
+            </p>
+          </div>
           <div class="paketeOffersFlex">
             <p class="paketeOffersHeadlineColor">99,00 €</p>
             <div class="paketeOffersUnterstrich"></div>
@@ -410,13 +153,15 @@
 
         <div class="paketePaddingTopDiv">
           <p class="paketeOffersHeadlineColor">ELEGANCE SMILE PREMIUM</p>
-          <p>
-            Unsere Premium Zahnaufhellung<br>
-            von uns empfohlen<br>
-            Zahnaufhellung in 60 Minuten<br>
-            Drei Gel-Anwendungen<br>
-            Aufhellung bis zu 7-8 Farbnuancen
-          </p>
+            <div class="paketeOffersMainText">
+              <p>
+                Unsere Premium Zahnaufhellung<br>
+                von uns empfohlen<br>
+                Zahnaufhellung in 60 Minuten<br>
+                Drei Gel-Anwendungen<br>
+                Aufhellung bis zu 7-8 Farbnuancen
+              </p>
+            </div>
           <div class="paketeOffersFlex">
             <p class="paketeOffersHeadlineColor">169,00 €</p>
             <div class="paketeOffersUnterstrich"></div>
@@ -425,12 +170,14 @@
 
         <div class="paketePaddingTopDiv">
           <p class="paketeOffersHeadlineColor">ELEGANCE SMILE ULTRA</p>
-          <p>
-            Unser Ultra Paket<br>
-            Zahnaufhellung in 80 Minuten<br>
-            drei Gel-Anwendungen<br>
-            Aufhellung bis zu 12 Farbnuancen
-          </p>
+            <div class="paketeOffersMainText">
+              <p>
+                Unser Ultra Paket<br>
+                Zahnaufhellung in 80 Minuten<br>
+                drei Gel-Anwendungen<br>
+                Aufhellung bis zu 12 Farbnuancen
+              </p>
+            </div>
           <div class="paketeOffersFlex">
             <p class="paketeOffersHeadlineColor">219,00 €</p>
             <div class="paketeOffersUnterstrich"></div>
