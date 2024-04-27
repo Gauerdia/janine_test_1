@@ -8,15 +8,18 @@
     <div class="nav1">
       <!-- Logo -->
       <div class="navLogo">
+        <a href="#spacer" onclick="event.preventDefault(); document.querySelector('#spacer').scrollIntoView({ behavior: 'smooth' });">
         <img
           class="logo_image"
           src="assets/images/janine_logo_2.png"
         />
+        </a>
       </div>
+
 
       <div class="navText">
         <!-- Die Ankerlinks bleiben linksbündig -->
-        <a href="#spacer" class="testSpan" onclick="event.preventDefault(); document.querySelector('#spacer').scrollIntoView({ behavior: 'smooth' });">Willkommen</a>
+        <a href="#spacer" class="testSpanWelcome" onclick="event.preventDefault(); document.querySelector('#spacer').scrollIntoView({ behavior: 'smooth' });">Willkommen</a>
         <a href="#info" class="testSpan" onclick="event.preventDefault(); document.querySelector('#info').scrollIntoView({ behavior: 'smooth' });">Informationen</a>
         <a href="#pakete" class="testSpan" onclick="event.preventDefault(); document.querySelector('#pakete').scrollIntoView({ behavior: 'smooth' });">Pakete</a>
         <a href="#contact" class="testSpan" onclick="event.preventDefault(); document.querySelector('#contact').scrollIntoView({ behavior: 'smooth' });">Kontakt</a>
