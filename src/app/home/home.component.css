@@ -56,7 +56,7 @@
 
 
 
-  .navbar-inverse{
+  .navbar-inverse-scrolled{
     background-color: white;
     opacity: 0.9;
     -webkit-transition: background-color 200ms linear;
@@ -355,12 +355,12 @@
     width: 100%;
   }
 
-  .navbar-inverse{
+  .navbar-inverse-scrolled{
     background-color: white;
     opacity: 0.9;
-    -webkit-transition: background-color 200ms linear;
-    -ms-transition: background-color 200ms linear;
-    transition: background-color 200ms linear;
+    -webkit-transition: background-color 1ms linear;
+    -ms-transition: background-color 1ms linear;
+    transition: background-color 1ms linear;
   }
 
   #page-wrap {
@@ -648,7 +648,7 @@
     width: 100%;
   }
 
-  .navbar-inverse{
+  .navbar-inverse-scrolled{
     background-color: white;
     opacity: 0.9;
     -webkit-transition: background-color 200ms linear;
@@ -927,12 +927,12 @@
     width: 100%;
   }
 
-  .navbar-inverse{
+  .navbar-inverse-scrolled{
     background-color: white;
     opacity: 0.9;
-    -webkit-transition: background-color 200ms linear;
-    -ms-transition: background-color 200ms linear;
-    transition: background-color 200ms linear;
+    -webkit-transition: background-color 0.1ms linear;
+    -ms-transition: background-color 0.1ms linear;
+    transition: background-color 0.1ms linear;
   }
 
   .imgBackground {
