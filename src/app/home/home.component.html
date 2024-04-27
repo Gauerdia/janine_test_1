@@ -1,114 +1,107 @@
-<!--NAVBAR-->
-<nav class="navbar" (scroll)="onWindowScroll();" id="welcome">
 
-  <!-- Übergeordneter Container, der das Logo und den Ankerlinks-Container umschließt -->
-  <div class="nav1">
-    <!-- Logo -->
-    <div class="navLogo">
-      <img
-        class="logo_image"
-        src="assets/images/janine_logo_2.png"
-      />
+<!-- NAV CONTAINER-->
+<div class="navParent">
+  <!--NAVBAR-->
+  <nav class="navbar" (scroll)="onWindowScroll();" id="welcome">
+
+    <!-- Übergeordneter Container, der das Logo und den Ankerlinks-Container umschließt -->
+    <div class="nav1">
+      <!-- Logo -->
+      <div class="navLogo">
+        <img
+          class="logo_image"
+          src="assets/images/janine_logo_2.png"
+        />
+      </div>
+
+      <div class="navText">
+        <!-- Die Ankerlinks bleiben linksbündig -->
+        <a href="#spacer" class="testSpan" onclick="event.preventDefault(); document.querySelector('#spacer').scrollIntoView({ behavior: 'smooth' });">Willkommen</a>
+        <a href="#info" class="testSpan" onclick="event.preventDefault(); document.querySelector('#info').scrollIntoView({ behavior: 'smooth' });">Informationen</a>
+        <a href="#pakete" class="testSpan" onclick="event.preventDefault(); document.querySelector('#pakete').scrollIntoView({ behavior: 'smooth' });">Pakete</a>
+        <a href="#contact" class="testSpan" onclick="event.preventDefault(); document.querySelector('#contact').scrollIntoView({ behavior: 'smooth' });">Kontakt</a>
+      </div>
     </div>
-
-    <div style="margin-top: 10px; text-align: left;">
-      <!-- Die Ankerlinks bleiben linksbündig -->
-      <a href="#welcome" class="testSpan" onclick="event.preventDefault(); document.querySelector('#moin').scrollIntoView({ behavior: 'smooth' });">Willkommen</a>
-      <a href="#info" class="testSpan" onclick="event.preventDefault(); document.querySelector('#info').scrollIntoView({ behavior: 'smooth' });">Informationen</a>
-      <a href="#packages" class="testSpan" onclick="event.preventDefault(); document.querySelector('#packages').scrollIntoView({ behavior: 'smooth' });">Pakete</a>
-      <a href="#contact" class="testSpan" onclick="event.preventDefault(); document.querySelector('#contact').scrollIntoView({ behavior: 'smooth' });">Kontakt</a>
-    </div>
-  </div>
-</nav>
-
-<!--SPACE TO TOP-->
-<div class="spacer1"></div>
-
-<div class="headerBGImage">
-  <img
-    class="imgBackground"
-    src="assets/images/2.png"
-  />
+  </nav>
 </div>
 
-<div class="spacer2"></div>
+<!-- MAIN IMAGE CONTAINER-->
+<div class="imageParent">
+  <!--SPACE TO TOP-->
+  <div class="spacer1" id="spacer"></div>
 
-<!--<div class="example">-->
-<!--  Testest-->
-<!--</div>-->
+  <div class="headerBGImage">
+    <img
+      class="imgBackground"
+      src="assets/images/2.png"
+    />
+  </div>
 
-<!--<div class="test1" style="width: 100%">-->
-<!--  fewfe-->
-<!--</div>-->
+  <div class="spacer2"></div>
+</div>
 
-<div class="mainText1">
+<!-- MAIN INFO CONTAINER-->
+<div class="infoParent" id="info">
+  <div class="mainText1">
+    <!--  Headline-->
+    <div class="mainText1Flex" id="test">
+      <h1 class="headline1">
+        Lass deine Zähne für dich sprechen<br><strong>Mit einer professionellen Zahnaufhellung!</strong>
+      </h1>
+    </div>
+    <!--  Aufzählung-->
+    <div class="mainText1FlexRight">
+      <ul class="enum1">
+        <li>
+          Sanfte und nachhaltige Aufhellung
+        </li>
+        <li>
+          Individuelle Anpassung: Bis zu 12 Farbnuancen heller
+        <li>
+          Zertifizierte Bleaching-Expertin mit jahrelanger Erfahrung
+        </li>
+        <li>
+          Stilvolles Ambiente für professionelle und komfortable Behandlungen
+        </li>
+        <li>
+          Schmerzfreie Behandlung dank schonender Methoden
+        </li>
+      </ul>
+    </div>
+  </div>
 
-<!--  Headline-->
-  <div class="mainText1Flex" id="test">
-    <h1 class="headline1">
-      Lass deine Zähne für dich sprechen<br><strong>Mit einer professionellen Zahnaufhellung!</strong>
+  <div class="spacer3"></div>
+  <div class="mainText2" id="faq">
+    <h1 class="headline2">
+      Wir beantworten Ihre Fragen zur Zahnaufhellung
     </h1>
   </div>
-
-<!--  Aufzählung-->
-  <div class="mainText1FlexRight">
-    <ul class="enum1">
-      <li>
-        Sanfte und nachhaltige Aufhellung
-      </li>
-      <li>
-        Individuelle Anpassung: Bis zu 12 Farbnuancen heller
-      <li>
-        Zertifizierte Bleaching-Expertin mit jahrelanger Erfahrung
-      </li>
-      <li>
-        Stilvolles Ambiente für professionelle und komfortable Behandlungen
-      </li>
-      <li>
-        Schmerzfreie Behandlung dank schonender Methoden
-      </li>
-    </ul>
-  </div>
-
-</div>
-
-<div class="spacer3"></div>
-
-<div class="mainText2" id="faq">
-
-  <h1 class="headline2">
-    Wir beantworten Ihre Fragen zur Zahnaufhellung
-  </h1>
-
-</div>
-
-<!--// Centering everything div-->
-<div class="centerDiv">
-
-  <div class="question1">
-    Warum überhaupt Zahnaufhellung?
-  </div>
-
-<div class="answer1">
-    Ein strahlendes Lächeln steigert Ihr Selbstvertrauen und sorgt für einen positiven ersten Eindruck. Unsere professionelle Zahnaufhellung verleiht Ihnen weißere Zähne in nur einer Sitzung – schonend, sicher und effektiv. Entdecken Sie, wie ein heller Glanz Ihre Ausstrahlung und Lebensqualität verbessern kann!
-</div>
-<br>
-<div class="question1">
-    Warum Elegance-Smile?
-</div>
-<div class="answer1">
-    Unser Studio bietet Ihnen eine exklusive Zahnaufhellung mit modernsten Methoden und einem hohen Hygienestandard. Unsere zertifizierte Bleaching-Expertin verfügt über jahrelange Erfahrung, um Ihnen ein strahlendes Ergebnis zu garantieren. Vertrauen Sie auf Elegance Smile für schonende, effektive Aufhellung und höchste Professionalität.
-</div>
-<br>
-<div class="question1">
-    Aber tut das nicht weh?
-</div>
-<div class="answer1">
-    Keine Sorge, unsere professionelle Zahnaufhellung ist völlig schmerzfrei! Dank schonender Methoden genießen Sie ein komfortables Erlebnis und erzielen strahlende Ergebnisse – ganz ohne Beschwerden.
-</div>
-<br>
-<div class="question1" id="ankerpaket">
-    Gerne beantworten stehen wir Ihnen für weitere Fragen zur Verfügung. Kontaktieren Sie uns!
+  <!--// Centering everything div-->
+  <div class="centerDiv">
+    <div class="question1">
+      Warum überhaupt Zahnaufhellung?
+    </div>
+    <div class="answer1">
+      Ein strahlendes Lächeln steigert Ihr Selbstvertrauen und sorgt für einen positiven ersten Eindruck. Unsere professionelle Zahnaufhellung verleiht Ihnen weißere Zähne in nur einer Sitzung – schonend, sicher und effektiv. Entdecken Sie, wie ein heller Glanz Ihre Ausstrahlung und Lebensqualität verbessern kann!
+    </div>
+    <br>
+    <div class="question1">
+      Warum Elegance-Smile?
+    </div>
+    <div class="answer1">
+      Unser Studio bietet Ihnen eine exklusive Zahnaufhellung mit modernsten Methoden und einem hohen Hygienestandard. Unsere zertifizierte Bleaching-Expertin verfügt über jahrelange Erfahrung, um Ihnen ein strahlendes Ergebnis zu garantieren. Vertrauen Sie auf Elegance Smile für schonende, effektive Aufhellung und höchste Professionalität.
+    </div>
+    <br>
+    <div class="question1">
+      Aber tut das nicht weh?
+    </div>
+    <div class="answer1">
+      Keine Sorge, unsere professionelle Zahnaufhellung ist völlig schmerzfrei! Dank schonender Methoden genießen Sie ein komfortables Erlebnis und erzielen strahlende Ergebnisse – ganz ohne Beschwerden.
+    </div>
+    <br>
+    <div class="question1" id="pakete">
+      Gerne beantworten stehen wir Ihnen für weitere Fragen zur Verfügung. Kontaktieren Sie uns!
+    </div>
 </div>
 
 
@@ -188,51 +181,49 @@
 
 </div>
 
+<!-- FOOTER CONTAINER-->
+<div class="footerParent">
+  <div class="contact1" id="contact">
 
-
-
-<div class="contact1" id="contact">
-
-  <div class="contactPadding">
-    <img class="contactLogo" src="assets/images/janine_logo_inverse.png"/>
-  </div>
-
-  <div class="contactPadding2">
-    <h3>
-      Kontaktdaten
-    </h3>
-  </div>
-
-  <div>
-    <p>
-      <b>Elegance Smile</b><br>
-      Hörder Rathausstraße 14<br>
-      44263 Dortmund
-    </p>
-  </div>
-
-  <div>
-    <p>
-      0231 6283 4369
-    </p>
-  </div>
-
-  <div>
-    <p>
-      <a href="mailto:info@elegance-smile.de">info@elegance-smile.de</a>
-    </p>
-  </div>
-
-  <div class="contactWholeWidth">
-    <div class="contactDisplayFlex">
-      <div class="contactFlex">
-        <a routerLink="/impressum" routerLinkActive="active">Impressum</a>
-      </div>
-      <div class="contactFlex">
-        <a routerLink="/datenschutz" routerLinkActive="active">Datenschutzerklärung</a>
-      </div>
+    <div class="contactPadding">
+      <img class="contactLogo" src="assets/images/janine_logo_inverse.png"/>
     </div>
 
-  </div>
+    <div class="contactPadding2">
+      <h3>
+        Kontaktdaten
+      </h3>
+    </div>
 
+    <div>
+      <p>
+        <b>Elegance Smile</b><br>
+        Hörder Rathausstraße 14<br>
+        44263 Dortmund
+      </p>
+    </div>
+
+    <div>
+      <p>
+        0231 6283 4369
+      </p>
+    </div>
+
+    <div>
+      <p>
+        <a href="mailto:info@elegance-smile.de">info@elegance-smile.de</a>
+      </p>
+    </div>
+
+    <div class="contactWholeWidth">
+      <div class="contactDisplayFlex">
+        <div class="contactFlex">
+          <a routerLink="/impressum" routerLinkActive="active">Impressum</a>
+        </div>
+        <div class="contactFlex">
+          <a routerLink="/datenschutz" routerLinkActive="active">Datenschutzerklärung</a>
+        </div>
+      </div>
+    </div>
+  </div>
 </div>
