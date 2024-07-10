@@ -1,5 +1,9 @@
 @media screen and (max-width: 400px) {
 
+  .flex1WhenFullScreen{
+
+  }
+
   .navText{
 
     text-align: left;
@@ -151,6 +155,20 @@
     text-align: left;
     line-height: 1em;
   }
+  .question1button{
+    font-family: gilroy;
+    color: white;
+    font-size: 22px;
+    text-align: left;
+    background-color: #b08720;
+    width: 85%;
+    padding: 15px;
+    text-align: center;
+    border-radius: 10px 0px 10px 0px;
+  }
+  .questionSpacer{
+    padding-top: 10%
+  }
 
   .answer1{
     font-family: Arial, sans-serif;
@@ -297,6 +315,26 @@
   }
 }
 @media screen and (min-width: 401px) and (max-width: 800px) {
+
+  .flex1WhenFullScreen{
+  }
+
+  .kontaktdaten{
+    font-family: gilroy;
+    font-size: 24px;
+  }
+
+  .öffnungszeiten1{
+
+  }
+
+  .öffnungszeiten2{
+
+  }
+  .öffnungszeiten3{
+
+  }
+
 
   .navText{
 
@@ -451,6 +489,20 @@
     text-align: left;
     line-height: 1em;
   }
+  .question1button{
+    font-family: gilroy;
+    color: white;
+    font-size: 22px;
+    text-align: left;
+    background-color: #b08720;
+    width: 73%;
+    padding: 15px;
+    text-align: center;
+    border-radius: 10px 0px 10px 0px;
+  }
+  .questionSpacer{
+    padding-top: 5%
+  }
 
   .answer1{
     font-family: Arial, sans-serif;
@@ -595,6 +647,14 @@
   }
 }
 @media screen and (min-width: 800px) and (max-width: 1200px) {
+
+  .displayFlexWhenFullScreen{
+    display: flex; text-align: left
+  }
+
+  .flex1WhenFullScreen{
+
+  }
 
   .navText{
     margin-top: 10px;
@@ -743,6 +803,20 @@
     font-size: 32px;
     text-align: left;
     line-height: 1em;
+  }
+  .question1button{
+    font-family: gilroy;
+    color: white;
+    font-size: 22px;
+    text-align: left;
+    background-color: #b08720;
+    width: 53%;
+    padding: 15px;
+    text-align: center;
+    border-radius: 10px 0px 10px 0px;
+  }
+  .questionSpacer{
+    padding-top: 5%
   }
 
   .answer1{
@@ -1057,6 +1131,20 @@
     font-size: 22px;
     text-align: left;
   }
+  .question1button{
+    font-family: gilroy;
+    color: white;
+    font-size: 22px;
+    text-align: left;
+    background-color: #b08720;
+    width: 23%;
+    padding: 15px;
+    text-align: center;
+    border-radius: 10px 0px 10px 0px;
+  }
+  .questionSpacer{
+    padding-top: 2%
+  }
 
   .answer1{
     font-family: gilroy;
@@ -1066,12 +1154,21 @@
     text-align: left;
   }
 
+  .centerPaketeDiv{
+    justify-content: center;
+    align-items: center;
+    width: 1200px;
+    margin: 0 auto;
+  }
+
   .paketeMainDiv{
+    max-width: 1200px;
     display: flex;
     flex-wrap: wrap;
     align-items: flex-start;
     justify-content: space-between;
     margin: 15% 10%;
+    /*margin: 0 auto*/
   }
 
   .paketeWidthDiv{
@@ -1135,7 +1232,8 @@
   }
 
   .contact1{
-    height: 500px;
+    /*height: 500px;*/
+    height: 25%;
     background-color: #dfc291;
     color: black;
     justify-content: center;
@@ -1167,4 +1265,13 @@
   .contactFlex{
     flex:1
   }
+
+  .flex1WhenFullScreen{
+    flex: 1
+  }
+
+  .displayFlexWhenFullScreen{
+    display: flex; text-align: left
+  }
+
 }

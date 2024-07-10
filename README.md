@@ -1,6 +1,7 @@
 
 
-ng build --aot
+"ng build --aot"
+"firebase deploy"
 
 Domain: http://elegance-smile.de/
 
