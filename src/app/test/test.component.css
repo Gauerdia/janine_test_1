@@ -1,0 +1,190 @@
+@media (max-width: 700px) {
+  .welcome-text {
+    position: absolute;
+    top: 10px;
+    margin-left: 100px;
+  }
+
+  .test{
+    display: none;
+    position: absolute;
+    background: #fff;
+    width: 100%;
+    background-color: white;
+  }
+  .burgermenu{
+    display: flex;
+    align-items: center;
+    height: 75px;
+    text-align: right;
+    padding-right: 50px;
+  }
+  .welcome-text {
+    position: absolute;
+    width: 70%;
+    left: -90px;
+    z-index: 2;
+    margin-top: -121px;
+    margin-left: 80px;
+  }
+
+  h1, .h1 {
+    font-family: "Source Sans Pro";
+    color: #000;
+    font-size: 1.0rem;
+    line-height: 1;
+    letter-spacing: 0px;
+    font-weight: 500;
+    font-style: normal;
+    text-decoration: none;
+    text-align: inherit;
+    margin-bottom: 0;
+    font-family: gilroy;
+  }
+  h2, .h2 {
+    font-family: gilroy;
+    font-size: 0.8rem;
+    line-height: 1rem;
+
+  }
+
+  .question1button {
+    font-family: gilroy;
+    color: white;
+    font-size: 15px;
+    text-align: center;
+    background-color: #b08720;
+    margin-left: 7%;
+    margin-top: 28px;
+    width: 50%;
+    padding: 10px 5px;
+    border-radius: 50px; /* Rounded corners for a modern look */
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
+    transition: all 0.2s ease-in-out; /* Smooth hover effect */
+    line-height: 1.1;
+  }
+
+  .headline1{
+    padding-top: 10px;
+    font-family: gilroy;
+    color: #b08720;
+  }
+
+  .enum1{
+    padding-top: 10px;
+    text-align: left;
+    color: dimgrey;
+    font-family: gilroy;
+  }
+
+
+  .paketeHeadline{
+    font-family: gilroy;
+    color: #b08720;
+    font-size: 18px;
+    /*margin-left: 0%;*/
+    /*width: 500px;*/
+    margin-left: 10%;
+  }
+
+  .unterstrich1{
+    /*width: 150px;*/
+    width: 10%;
+    height: 7px;
+    background-color: #b08720;
+    margin-left: 35%;
+  }
+
+  .paketeOffersHeadlineColor{
+    color: #b08720
+  }
+
+  .paketeOffersMainText{
+    font-size: 12px;
+    line-height: 1.2em;
+    margin-left: 5%;
+  }
+
+
+
+}
+@media (min-width: 701px){
+  .test{
+    background-color: white;
+    height: 80px;
+
+  }
+  .navtext{
+    height: 80px;
+    display: flex;
+    /*flex-direction: column; !* Arrange items vertically *!*/
+    align-items: flex-end; /* Align items to the end of the flex container */
+    justify-content: flex-end; /* Align items to the bottom of the flex container */
+  }
+  .burgermenu{
+    display: none
+  }
+  .welcome-text{
+    position: absolute; top:-500px; margin-left: 100px;
+  }
+
+  .question1button {
+    font-family: gilroy;
+    color: white;
+    font-size: 15px;
+    text-align: center; /* Center text alignment is kept */
+    background-color: #b08720;
+    width: 45%;
+    padding: 10px;  /* Reduce padding for tighter spacing */
+    border-radius: 10px 0px 10px 0px;
+    line-height: 1.1;  /* Reduce line-height for tighter spacing between lines of text within the button */
+  }
+
+
+}
+
+.image-container {
+  position: relative;
+  width: 60px;
+  height: 60px;
+  margin-top: 10px;
+}
+
+.image-container::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  /* Changed fill color to black */
+  fill: black;
+  z-index: -1;
+}
+
+.logo_image {
+  position: relative;
+}
+
+
+.centerDiv{
+  max-width: 1200px;
+  margin: 0 auto;
+  padding-top: 3%
+}
+
+ul {
+  list-style-type: none;
+}
+
+li{
+  margin: 15px 0px;
+}
+
+/*.centerPaketeDiv{*/
+/*  justify-content: center;*/
+/*  align-items: center;*/
+/*  width: 1200px;*/
+/*  margin: 0 auto;*/
+/*}*/

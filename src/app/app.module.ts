@@ -9,6 +9,9 @@ import { LeistungenComponent } from './leistungen/leistungen.component';
 import { ImpressumComponent } from './impressum/impressum.component';
 import { DatenschutzerklaerungComponent } from './datenschutzerklaerung/datenschutzerklaerung.component';
 import { HomeComponent } from './home/home.component';
+import { TestComponent } from './test/test.component';
+import {MatIconModule} from "@angular/material/icon";
+import {MatButtonModule} from "@angular/material/button";
 
 @NgModule({
   declarations: [
@@ -16,13 +19,16 @@ import { HomeComponent } from './home/home.component';
     AppComponent,
     LeistungenComponent,
     DatenschutzerklaerungComponent,
-    HomeComponent
+    HomeComponent,
+    TestComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
     MatToolbarModule,
+    MatIconModule,
+    MatButtonModule
   ],
   providers: [],
   bootstrap: [AppComponent]  // AppComponent

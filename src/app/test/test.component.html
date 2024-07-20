@@ -1,0 +1,433 @@
+<!--NAV-->
+<nav style="position: fixed; top:0px; background-color: white; width: 100%;z-index: 3">
+  <div>
+    <img
+      class="logo_image"
+      src="assets/images/elegance_smile_2.png"
+      width="200"
+      style="float: left; padding-left: 5px;"
+    />
+  </div>
+
+
+  <div (click)="toggleMenu()" class="burgermenu">
+    <div style=" flex:1">
+    <i class="material-icons">
+      {{ isMenuOpen ? "close" : "menu"}}
+    </i>
+    </div>
+  </div>
+
+  <div [class.is-open]="isMenuOpen" class="test" >
+    <div class="navtext">
+      <div style="flex:1">
+        <a>Info</a>
+      </div>
+      <div style="flex:1">
+        <a>Pakete</a>
+      </div>
+      <div style="flex:1">
+        <a>Über uns</a>
+      </div>
+      <div style="flex:1">
+        <a>Kontakt</a>
+      </div>
+    </div>
+  </div>
+
+
+
+
+</nav>
+
+<!--  SIDEBAR-->
+<div *ngIf="isMenuOpen"
+  style="position:fixed; background-color: white; width: 100%; height: 100%; z-index: 2"
+>
+
+  <div style="justify-content: center; margin-top: 50%; font-size: 22px">
+    <div style="margin-bottom: 5%">
+      wfwe
+    </div>
+    <div style="margin-bottom: 5%">
+      fwefef
+    </div>
+    <div style="margin-bottom: 5%">
+      fwefef
+    </div>
+    <div style="margin-bottom: 5%">
+      fwefef
+    </div>
+    <div style="margin-bottom: 5%">
+      fwefef
+    </div>
+  </div>
+
+</div>
+
+<!--IMAGE-->
+<!--<div style="height: 500px;background-color: grey">-->
+<!--</div>-->
+
+<div style="width: 100%;z-index: 1">
+  <div>
+    <img
+      class="logo_image"
+      src="assets/images/1.png"
+      style="width: 100%;padding-top: 70px"
+    />
+  </div>
+</div>
+
+<div class="centerDiv" >
+  <div style="position: absolute; background-color: #125699; width: 80%;">
+    <div class="welcome-text">
+      <h1>Elegance Smile</h1>
+      <h2>Für ein lächeln das verzaubert.</h2>
+    </div>
+    <div style="margin-top: -80px; left:5%;">
+      <div class="question1button">
+        Kontaktieren Sie uns!
+      </div>
+    </div>
+  </div>
+
+</div>
+
+
+<div class="mainText1Flex" id="test">
+  <h1 class="headline1">
+    Lass deine Zähne für dich sprechen<br><strong>Mit einer professionellen Zahnaufhellung!</strong>
+  </h1>
+
+  <div class="janinefont">
+    <img src="assets/images/janinefont.png" width="400px">
+  </div>
+</div>
+<!--  Aufzählung-->
+<div class="mainText1FlexRight">
+  <ul class="enum1" >
+    <li style=" margin: 15px 0px;">Strahlend schön: Individuelle Aufhellung bis 12 Nuancen</li>
+    <li>Expertise trifft Komfort: Zertifiziertes Bleaching in stilvollem Ambiente</li>
+    <li>Sanfte Methoden, schmerzfreie Behandlung: Ihr Lächeln in besten Händen</li>
+  </ul>
+  <h1 style="font-family: gilroy">Wir beraten dich gerne!</h1>
+</div>
+
+<!--  Spacer-->
+<div style="margin-top: 50px"></div>
+
+<div class="paketeHeadline" style="text-align: left; margin-left: 5%">
+  <p>
+    Wichtige Informationen zur Behandlung
+  </p>
+  <div class="unterstrich1" style="text-align: left; margin-left: 0"></div>
+</div>
+
+<div style="flex: 1">
+  <img src="assets/images/smile_karte1.PNG" width="300">
+</div>
+
+<!--  Spacer-->
+<div style="margin-top: 20px"></div>
+
+<div style="text-align: left; font-family: gilroy; font-size: 14px; padding-right: 5%; padding-left: 5%">
+  <p>
+    Eine kosmetische Zahnaufhellung funktioniert am Besten bei natürlichen Zähnen. Zu beachten sind Zahnersatz, Kronen
+    Veneers oder Füllungen. Diese werden wieder in ihren ursprünglichen Farbton aufgehellt.
+  </p>
+  <p>
+    Direkt nach der Behandlung empfehlen wir zwei Stunden auf Essen und Trinken zu verzichten, da die Wirkstoffe
+    noch nachwirken.
+  </p>
+  <p>
+    Die Behandlung darf nicht bei Schwangeren oder Frauen in der Stillzeit sowie Patienten mit Chemotherapie
+    durchgeführt werden.
+  </p>
+</div>
+
+<!--  Spacer-->
+<div style="margin-top: 50px"></div>
+
+<!--  Unsere Zahnaufhellungspakete-->
+<div class="centerPaketeDiv" style="text-align: left">
+  <div class="paketeHeadline" style="text-align: left; margin-left: 5%">
+    <p>
+      Unsere Zahnaufhellungspakete
+    </p>
+    <div class="unterstrich1" style="text-align: left; margin-left: 0"></div>
+  </div>
+</div>
+
+<!--  Spacer-->
+<div style="margin-top: 50px"></div>
+
+<div>
+  <p class="paketeOffersHeadlineColor">ELEGANCE SMILE LIGHT</p>
+</div>
+
+<div style="height: 100px">
+  <div class="paketeOffersMainText">
+    <p>
+      Zahnaufhellung in 40 Minuten<br>
+      Zwei Gel-Anwendungen <br>
+      Aufhellung bis zu 5-6 Farbnuancen
+    </p>
+  </div>
+
+  <p class="paketeOffersHeadlineColor">65,00 €</p>
+  <div class="paketeOffersUnterstrich"></div>
+
+</div>
+
+<!--      ELEGANCE SMILE PREMIUM-->
+<div class="flex1WhenFullScreen">
+  <p class="paketeOffersHeadlineColor">ELEGANCE SMILE PREMIUM</p>
+
+  <div style="height: 60px">
+    <div class="paketeOffersMainText">
+      <p style="padding-left: 15%; padding-right: 15%">
+        Unsere Premium Zahnaufhellung - von uns empfohlen.
+        Zahnaufhellung in 60 Minuten<br>
+        Drei Gel-Anwendungen <br>
+        Aufhellung bis zu 8 Farbnuancen
+      </p>
+    </div>
+  </div>
+
+  <p class="paketeOffersHeadlineColor">115,00 €</p>
+  <div class="paketeOffersUnterstrich"></div>
+</div>
+
+<!--      ELEGANCE SMILE ULTRA-->
+<div class="flex1WhenFullScreen">
+  <p class="paketeOffersHeadlineColor">ELEGANCE SMILE ULTRA</p>
+
+  <div style="height: 60px">
+    <div class="paketeOffersMainText">
+      <p style="padding-left: 15%; padding-right: 15%">
+        Unser Ultra Paket - für ein maximales Erlebnis.
+        Zahnaufhellung in 80 Minuten<br>
+        Drei Gel-Anwendungen <br>
+        Aufhellung bis zu 12 Farbnuancen
+      </p>
+    </div>
+  </div>
+
+  <p class="paketeOffersHeadlineColor">155,00 €</p>
+  <div class="paketeOffersUnterstrich"></div>
+
+</div>
+
+<!--  Spacer-->
+<div style="margin-top: 50px"></div>
+
+<!--  UNSERE KOMBIPAKETE-->
+<div class="centerPaketeDiv" style="text-align: left">
+  <div class="paketeHeadline" style="text-align: left; margin-left: 5%">
+    <p>
+      Unsere Kombipakete
+    </p>
+    <div class="unterstrich1" style="text-align: left; margin-left: 0"></div>
+  </div>
+</div>
+
+<!--  Spacer-->
+<div style="margin-top: 50px"></div>
+
+
+<!--      ELEGANCE SMILE COMPLETE-->
+<div class="flex1WhenFullScreen">
+  <p class="paketeOffersHeadlineColor">ELEGANCE SMILE COMPLETE</p>
+
+  <div style="height: 60px">
+    <div class="paketeOffersMainText">
+      <p style="padding-left: 15%; padding-right: 15%">
+        Kosmetische Zahnreinigung.<br>
+        Zahnaufhellung in 60 Minuten<br>
+        Drei Gel-Anwendungen <br>
+        Aufhellung bis zu 12 Farbnuancen
+      </p>
+    </div>
+  </div>
+
+  <p class="paketeOffersHeadlineColor">180,00 €</p>
+  <div class="paketeOffersUnterstrich"></div>
+
+</div>
+
+
+<!--      ELEGANCE SMILE COMPLETE PREMIUM-->
+<div style="flex: 1">
+  <p class="paketeOffersHeadlineColor">ELEGANCE SMILE COMPLETE PREMIUM</p>
+
+  <div style="height: 60px">
+    <div class="paketeOffersMainText">
+      <p>
+        Kosmetische Zahnreinigung<br>
+        Zahnaufhellung in 80 Minuten<br>
+        Drei Gel-Anwendungen <br>
+        Aufhellung bis zu 12 Farbnuancen
+      </p>
+    </div>
+  </div>
+
+  <p class="paketeOffersHeadlineColor">200,00 €</p>
+  <div class="paketeOffersUnterstrich"></div>
+
+</div>
+
+<!--  Spacer-->
+<div style="margin-top: 50px"></div>
+
+<!--  Zahnschmuck-->
+<div class="centerPaketeDiv" style="text-align: left">
+  <div class="paketeHeadline" style="text-align: left; margin-left: 5%">
+    <p>
+      Zahnschmuck
+    </p>
+    <div class="unterstrich1" style="text-align: left; margin-left: 0"></div>
+  </div>
+</div>
+
+<!--PACKAGE-->
+<div style="flex: 1">
+
+  <div style="height: 150px">
+    <div class="paketeOffersMainText">
+      <p>
+        Verleihe Deinen Zähnen einen <br>
+        funkelnden Glanz und mache Dein<br>
+        Lächeln zu einem echten Hingucker.<br>
+        Ob funkelnde Kristalle oder elegante<br>
+        Goldakzente - wir haben für jeden<br>
+        Geschmack das passende Design.<br><br>
+        Besuche uns und entdecke die <br>
+        Vielfalt an Zahnschmuck, der Deine<br>
+        Zähne zum Strahlen bringt.
+      </p>
+    </div>
+  </div>
+
+  <p class="paketeOffersHeadlineColor">ab 29,00 €</p>
+  <div class="paketeOffersUnterstrich"></div>
+
+</div>
+
+<!--  Spacer-->
+<div style="margin-top: 50px"></div>
+
+<!--KOSMETISCHE ZAHNREINIGUNG-->
+<div class="centerPaketeDiv" style="text-align: left">
+  <div class="paketeHeadline" style="text-align: left; margin-left: 5%">
+    <p>
+      Kosmetische Zahnreinigung
+    </p>
+    <div class="unterstrich1" style="text-align: left; margin-left: 0"></div>
+  </div>
+</div>
+
+
+<!--PACKAGE-->
+<div style="flex: 1">
+
+  <div style="height: 110px">
+    <div class="paketeOffersMainText">
+      <p>
+        Erlebe das Gefühl sauberer,<br>
+        strahlender Zähne mit unserer<br>
+        professionellen kosmetischen<br>
+        Zahnreinigung. Sie entfernt<br>
+        hartnäckige Beläge und<br>
+        Verfärbungen, die durch Kaffee,<br>
+        Tee oder Tabak entstanden sind.
+      </p>
+    </div>
+  </div>
+
+  <p class="paketeOffersHeadlineColor">40,00 €</p>
+  <div class="paketeOffersUnterstrich"></div>
+
+</div>
+
+<!--  Spacer-->
+<div style="margin-top: 50px"></div>
+
+<!--  Disclaimer-->
+<div class="centerPaketeDiv" >
+  <div style="display: flex;text-align: left; margin-left: 5%">
+    <div style="flex: 1">
+      <p class="paketeOffersHeadlineColor">
+        <b>(Keine Zahnsteinentfernung und Diagnoseerstellung)</b>
+      </p>
+    </div>
+    <div style="flex: 1">
+    </div>
+  </div>
+</div>
+
+<!--  Spacer-->
+<div style="margin-top: 50px"></div>
+
+<div>
+  <div class="paketeHeadline" style="text-align: left; margin-left: 5%">
+    <p>
+      Über mich
+    </p>
+    <div class="unterstrich1" style="text-align: left; margin-left: 0"></div>
+  </div>
+</div>
+
+<!--  Spacer-->
+<div style="margin-top: 30px"></div>
+
+<div>
+  <img src="assets/images/janine3.png" width="300" style="border-radius: 70%">
+</div>
+
+<!--  Spacer-->
+<div style="margin-top: 30px"></div>
+
+<!--TEXTBODY-->
+<div>
+  <p style="font-family: gilroy; text-align: left; padding-left: 5%; padding-right: 5%">
+    Seit 2012 bin ich im Bereich der Zahnmedizinischen Fachangestellten tätig.<br>
+    Im Jahr 2015 habe ich meine Ausbildung erfolgreich abgeschlossen und arbeite nun seit über 12 Jahren in diesem Beruf.<br>
+    In dieser Zeit habe ich wertvolle Erfahrungen  gesammelt.<br>
+    Ich habe mich auf den Bereich der kosmetischen Zahnaufhellung fokussiert und im April 2024 meine eigene Vision umgesetzt, <br>
+    indem ich mein eigenes Studio eröffnet habe.<br>
+    Durch meine Weiterbildung zur Dentalkosmetikerin, die ich im Mai 2024 erfolgreich absolviert habe, <br>
+    haben meine Kunden das nötige Vertrauen, dass sie eine fachgerecht durchgeführte Behandlung genießen können.<br>
+    Für mich ist es ganz wichtig, dass meine Kunden mit der Behandlung und dem Ergebnis zufrieden sind, <br>
+    denn nur dann bin ich auch glücklich.<br><br>
+
+    Ich stehe Euch für eine kostenlose Beratung jederzeit zur Verfügung.
+  </p>
+</div>
+
+
+
+
+
+<!--FILLER-->
+<div style="height: 500px;background-color: green">
+  weffewwef
+</div>
+
+<!--RIGHT ICONS-->
+<div style="position: fixed; right: 0; top: 50%; margin-right: 5%;">
+  <div class="image-container">
+    <svg width="60" height="60" viewBox="0 0 60 60" style="margin-top: 10px;">
+      <circle cx="30" cy="30" r="25" fill="#b08720" stroke="#e0e0e0" stroke-width="2" />
+      <image href="assets/images/schedule.svg" width="40" height="40" x="10" y="10" />
+    </svg>
+  </div>
+  <div class="image-container">
+    <svg width="60" height="60" viewBox="0 0 60 60" style="margin-top: 10px;">
+      <circle cx="30" cy="30" r="25" fill="#b08720" stroke="#e0e0e0" stroke-width="2" />
+      <image href="assets/images/whatsapp.svg" width="40" height="40" x="10" y="10" />
+    </svg>
+  </div>
+</div>
+
+
