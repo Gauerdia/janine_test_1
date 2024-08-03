@@ -1,4 +1,4 @@
-@media screen and (max-width: 400px) {
+/* @media screen and (max-width: 400px) {
 
   .flex1WhenFullScreen{
 
@@ -1169,7 +1169,7 @@
     justify-content: space-between;
     margin: 15% 10%;
     /*margin: 0 auto*/
-  }
+  /* }
 
   .paketeWidthDiv{
     width: 600px;
@@ -1233,6 +1233,7 @@
 
   .contact1{
     /*height: 500px;*/
+/*     
     height: 25%;
     background-color: #dfc291;
     color: black;
@@ -1277,4 +1278,4 @@
 }
 ul {
   list-style-type: none;
-}
+} */
