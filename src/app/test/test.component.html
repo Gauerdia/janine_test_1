@@ -1,433 +1,284 @@
-<!--NAV-->
-<nav style="position: fixed; top:0px; background-color: white; width: 100%;z-index: 3">
-  <div>
-    <img
-      class="logo_image"
-      src="assets/images/elegance_smile_2.png"
-      width="200"
-      style="float: left; padding-left: 5px;"
-    />
-  </div>
-
-
-  <div (click)="toggleMenu()" class="burgermenu">
-    <div style=" flex:1">
-    <i class="material-icons">
-      {{ isMenuOpen ? "close" : "menu"}}
-    </i>
-    </div>
-  </div>
-
-  <div [class.is-open]="isMenuOpen" class="test" >
-    <div class="navtext">
-      <div style="flex:1">
-        <a>Info</a>
+<div class="body">
+  <nav>
+    <div class="navContentContainer">
+      <div class="logoWrapper">
+        <img class="logo_image" src="assets/images/elegance_smile_2.png"/>
+        <p>Hörder Rathausstraße 14<br>44263 Dortmund</p>
       </div>
-      <div style="flex:1">
-        <a>Pakete</a>
+
+      <div (click)="toggleMenu()" class="burgermenu">
+        <i class="material-icons">
+          {{ isMenuOpen ? "close" : "menu"}}
+        </i>
       </div>
-      <div style="flex:1">
-        <a>Über uns</a>
-      </div>
-      <div style="flex:1">
-        <a>Kontakt</a>
+
+      <div [class.is-open]="isMenuOpen" class="test menu">
+        <div class="navtext">
+          <a class="navLink" href="home/#infoSection">Info</a>
+          <a class="navLink" href="home/#packagesSection">Pakete</a>
+          <a class="navLink" href="home/#aboutUsSection">Über uns</a>
+          <a class="navLink" href="home/#contactSection">Kontakt</a>
+        </div>
       </div>
     </div>
-  </div>
+  </nav>
 
+  <header>
+    <a class="contactBtnLink" href="https://app.chilli24.org/AppFrame.php?id=2758&aID=2758&isIFrame=1">
+      <button class="contactBtn01">Jetzt online Termin buchen!
+        <img class="phoneIcon" src="../../assets/images/calender.svg" alt="">
+      </button>
+    </a>
 
-
-
-</nav>
-
-<!--  SIDEBAR-->
-<div *ngIf="isMenuOpen"
-  style="position:fixed; background-color: white; width: 100%; height: 100%; z-index: 2"
->
-
-  <div style="justify-content: center; margin-top: 50%; font-size: 22px">
-    <div style="margin-bottom: 5%">
-      wfwe
+    <div class="headlineContainer">
+      <img class="headline" src="../../assets/images/headerLogo.png" alt="">
+      <a class="contactBtnLink" href="https://app.chilli24.org/AppFrame.php?id=2758&aID=2758&isIFrame=1">
+        <button class="contactBtn02">Jetzt online Termin buchen!
+          <img class="phoneIcon" src="../../assets/images/calender.svg" alt="">
+        </button>
+      </a>
     </div>
-    <div style="margin-bottom: 5%">
-      fwefef
-    </div>
-    <div style="margin-bottom: 5%">
-      fwefef
-    </div>
-    <div style="margin-bottom: 5%">
-      fwefef
-    </div>
-    <div style="margin-bottom: 5%">
-      fwefef
-    </div>
-  </div>
 
-</div>
+    <picture>
+      <source media="(max-width: 1200px)" srcset="../../assets/images/1v3.png">
+      <img class="heroBanner" src="../../assets/images/1v2.png" alt="Hero Banner">
+    </picture>
+  </header>
 
-<!--IMAGE-->
-<!--<div style="height: 500px;background-color: grey">-->
-<!--</div>-->
+  <aside>
+    <a class="asideLink" href="https://www.instagram.com/elegance.smile/">
+      <img class="whatsappIconAside asideIcon" src="../../assets/images/instagram.svg" alt="">
+    </a>
+    <a class="asideLink mobile-link" href="tel:0231 6283 4369">
+      <img class="whatsappIconAside asideIcon" src="../../assets/images/whatsappv2.svg" alt="">
+    </a>
+    <a class="asideLink desktop-link" href="home/#contactSection">
+      <img class="whatsappIconAside asideIcon" src="../../assets/images/whatsappv2.svg" alt="">
+    </a>
+    <a class="asideLink" href="https://www.tiktok.com/@elegancesmiledortmund">
+      <img class="asideIcon tiktokIconAside" src="assets/images/tiktok.svg">
+    </a>
+    <a class="asideLink" href="https://www.facebook.com/profile.php?id=61558802338622&paipv=0&eav=AfY_71R_pGWnxg_ra6wKCHVqObaDJTJ004W8XivmiMbwEDawLRkOfPoSZ-DdTO-z3I8">
+      <img class="asideIcon facebookIconAside" src="../../assets/images/facebook.svg">
+    </a>
+    <a class="asideLink" href="https://app.chilli24.org/AppFrame.php?id=2758&aID=2758&isIFrame=1">
+      <img class="asideIcon" src="../../assets/images/calender.svg" alt="Termin buchen">
+    </a>
+  </aside>
 
-<div style="width: 100%;z-index: 1">
-  <div>
-    <img
-      class="logo_image"
-      src="assets/images/1.png"
-      style="width: 100%;padding-top: 70px"
-    />
-  </div>
-</div>
-
-<div class="centerDiv" >
-  <div style="position: absolute; background-color: #125699; width: 80%;">
-    <div class="welcome-text">
-      <h1>Elegance Smile</h1>
-      <h2>Für ein lächeln das verzaubert.</h2>
-    </div>
-    <div style="margin-top: -80px; left:5%;">
-      <div class="question1button">
-        Kontaktieren Sie uns!
+  <main>
+    <section class="benefitsSection">
+      <div class="headlineBenefitsSectionContainer">
+        <h2 class="headlineBenefitsSection headlineBenefitsSection01">Lass deine Zähne für dich sprechen<br></h2>
+        <h2 class="headlineBenefitsSection headlineBenefitsSection02">Mit einer kosmetischen Zahnaufhellung!</h2>
       </div>
+
+      <div class="benefits">
+        <div class="benefitContainer">
+          <h3 class="benefit01 benefit">Strahlend schön</h3>
+          <p class="benfit01Paragraph benefitP">Erleben Sie eine exklusive Zahnaufhellung, die Ihre Zähne bis zu 12 Nuancen heller macht.</p>
+        </div>
+        <div class="benefitContainer">
+          <h3 class="benefit02 benefit">Expertise trifft Komfort</h3>
+          <p class="benfit02Paragraph benefitP">Zertifizierte Anwendungen in stilvollem Ambiente bieten Ihnen den Komfort den Sie verdienen.</p>
+        </div>
+        <div class="benefitContainer">
+          <h3 class="benefit03 benefit">Sanfte Methoden</h3>
+          <p class="benfit03Paragraph benefitP">Genießen Sie eine schmerzfreie Behandlung, gesichert durch hohe Ansprüche und Professionalität.</p>
+        </div>
+      </div>
+
+      <p class="adviceParagraph">Wir beraten Sie gerne!</p>
+      <img class="sloganPng" src="assets/images/janinefont.png">
+    </section>
+
+    <section class="infoSection" id="infoSection">
+      <h2 class="headlineInfoSection">Wichtige Informationen zur Behandlung</h2>
+
+      <div class="contentContainerInfoSection">
+        <ul class="infoList">
+          <li class="listItem01 listItem">Eine kosmetische Zahnaufhellung funktioniert am besten bei natürlichen Zähnen. Zu beachten sind Zahnersatz, Kronen
+            Veneers oder Füllungen. Diese werden wieder in ihren ursprünglichen Farbton aufgehellt.</li>
+          <div class="partingLine"></div>
+          <li class="listItem02 listItem">Direkt nach der Behandlung empfehlen wir zwei Stunden auf Essen und Trinken zu verzichten, da die Wirkstoffe
+            noch nachwirken.</li>
+          <div class="partingLine"></div>
+          <li class="listItem03 listItem">Alle Leistungen nach EU Richtlinien 2011/84/EU und Kosmetikverordnung 1223/2009/EG</li>
+        </ul>
+        
+        <img class="smileCard" src="../../assets/images/smile_karte2.PNG" alt="">
+      </div>
+    </section>
+
+    <section class="packagesSection" id="packagesSection">
+      <h2 class="headlinePackagesSection">Zahnaufhellungs&shy;pakete</h2>
+
+      <h3 class="packagesCategory">Standardpakete</h3>
+      <div class="packagesContainer">
+        <article class="package01 package">
+          <h4 class="packageHeadline">ELEGANCE SMILE LIGHT</h4>
+          <p class="price">65 €</p>
+          <p class="packageDescription">Das Basispaket - für natürlich weiße Zähne.</p>
+          <ul class="serviceList">
+            <li class="service01 service">Zahnaufhellung in 40 Minuten</li>
+            <li class="service02 service">Zwei Gel-Anwendungen</li>
+            <li class="service03 service">Bis zu 6 Farbnuancen</li>
+          </ul>
+        </article>
+        <article class="package03 package">
+          <h4 class="packageHeadline">ELEGANCE SMILE PREMIUM</h4>
+          <p class="price">115 €</p>
+          <p class="packageDescription">Unsere Premium Zahnaufhellung - von uns empfohlen.</p>
+          <ul class="serviceList">
+            <li class="service01 service">Zahnaufhellung in 60 Minuten</li>
+            <li class="service02 service">drei Gel-Anwendungen</li>
+            <li class="service03 service">Aufhellung bis zu 8 Farbnuancen</li>
+          </ul>
+        </article>
+        <article class="package02 package">
+          <h4 class="packageHeadline">ELEGANCE SMILE ULTRA</h4>
+          <p class="price">155 €</p>
+          <p class="packageDescription">Unser Ultra Paket - für ein maximales Erlebnis.</p>
+          <ul class="serviceList">
+            <li class="service01 service">Zahnaufhellung in 80 Minuten</li>
+            <li class="service02 service">drei Gel-Anwendungen</li>
+            <li class="service03 service">Aufhellung bis zu 12 Farbnuancen</li>
+          </ul>
+        </article>
+      </div>
+
+      <h3 class="packagesCategory">Kombipakete</h3>
+      <div class="packagesContainer">
+        <article class="package04 package">
+          <h4 class="packageHeadline">ELEGANCE SMILE COMPLETE</h4>
+          <p class="price">180 €</p>
+          <p class="packageDescription">Unser Basispaket in Kombination mit einer kosmetischen Zahnreinigung</p>
+          <ul class="serviceList">
+            <li class="service01 service">kosmetische Zahnreinigung</li>
+            <li class="service02 service">Zahnaufhellung in 80 Minuten</li>
+            <li class="service03 service">drei Gel-Anwendungen</li>
+            <li class="service04 service">Aufhellung bis zu 12 Farbnuancen</li>
+          </ul>
+        </article>
+        <article class="package05 package">
+          <h4 class="packageHeadline">ELEGANCE SMILE COMPLETE PREMIUM</h4>
+          <p class="price">200 €</p>
+          <p class="packageDescription">Unser Premiumpaket in Kombination mit einer kosmetischen Zahnreinigung</p>
+          <ul class="serviceList">
+            <li class="service01 service">kosmetische Zahnreinigung</li>
+            <li class="service02 service">Zahnaufhellung in 80 Minuten</li>
+            <li class="service03 service">drei Gel-Anwendungen</li>
+            <li class="service04 service">Aufhellung bis zu 12 Farbnuancen</li>
+            <li class="service05 service">Zahnschmuck</li>
+          </ul>
+        </article>
+      </div>
+
+      <h3 class="packagesCategory">Weitere Dienste</h3>
+        <div class="packagesContainer">
+          <article class="package06 package">
+            <h4 class="packageHeadline">Zahnschmuck</h4>
+            <p class="price">ab 29 €</p>
+            <p class="packageDescription packageDescription06">        
+              Verleihe Deinen Zähnen einen funkelnden Glanz und mache Dein Lächeln zu einem echten Hingucker. 
+              Ob funkelnde Kristalle oder elegante Goldakzente - wir haben für jeden Geschmack das passende Design.<br><br>
+              Besuche uns und entdecke die Vielfalt an Zahnschmuck, der Deine Zähne zum Strahlen bringt.</p>
+          </article>
+          <article class="package07 package">
+            <h4 class="packageHeadline">kosmetische Zahnreinigung</h4>
+            <p class="price">40 €</p>
+            <p class="packageDescription packageDescription07">Erlebe das Gefühl sauberer, strahlender Zähne mit unserer 
+              professionellen kosmetischen Zahnreinigung. Sie entfernt hartnäckige Beläge und Verfärbungen, 
+              die durch Kaffee, Tee oder Tabak entstanden sind.</p>
+          </article>
+        </div>
+    </section>
+
+    <section class="aboutUsSection" id="aboutUsSection">
+      <img class="teamPhoto01" src="../../assets/images/janine3.jpg" alt="">
+      
+      <div class="contentContainerAboutUsSection">
+        <h2 class="headlineAboutUsSection">Über mich</h2>
+        <p class="aboutUsText">Seit 2012 bin ich im Bereich der Zahnmedizinischen Fachangestellten tätig. Im Jahr 2015 habe 
+          ich meine Ausbildung erfolgreich abgeschlossen und arbeite nun seit über 12 Jahren in diesem Beruf. In dieser Zeit 
+          habe ich wertvolle Erfahrungen gesammelt. Ich habe mich auf den Bereich der kosmetischen Zahnaufhellung fokussiert 
+          und im April 2024 meine eigene Vision umgesetzt, indem ich mein eigenes Studio eröffnet habe. Durch meine 
+          Weiterbildung zur Dentalkosmetikerin, die ich im Mai 2024 erfolgreich absolviert habe, haben meine Kunden das nötige 
+          Vertrauen, dass sie eine fachgerecht durchgeführte Behandlung genießen können. Für mich ist es ganz wichtig, dass meine 
+          Kunden mit der Behandlung und dem Ergebnis zufrieden sind, denn nur dann bin ich auch glücklich.<br><br>
+          <strong>Ich stehe Ihnen für eine kostenlose Beratung jederzeit zur Verfügung.</strong></p>
+      </div>
+
+      <ul class="primarySkillList">
+        <li class="primarySkill">Dentalkosmetikerin</li>
+        <div class="partingLineAboutUsSection"></div>
+        <li class="primarySkill">12 Jahre<br>Berufserfahrung</li>
+        <div class="partingLineAboutUsSection"></div>
+        <li class="primarySkill">Zahnmedizinische<br>Fachangestellte</li>
+      </ul>
+    </section>
+    <section class="contactSection" id="contactSection">
+      <h2 class="headlineContactSection">Kontakt</h2>
+
+      <div class="contactSectionWrapper">
+        <div class="contactContainer">
+          <article class="openingTime">
+            <img class="iconContact" src="../../assets/images/clock-outline.svg" alt="">
+            <h3>Öffnungszeiten</h3>
+            <p>Mo - Fr: 10:00 - 18:00 Uhr</p>
+            <p>Samstag nach Vereinbarung</p>
+          </article>
+          <article class="adress">
+            <img class="iconContact" src="../../assets/images/map-marker-radius-outline.svg" alt="">
+            <h3>Anschrift</h3>
+            <p>Elegance Smile</p>
+            <p>Hörder Rathausstraße 14</p>
+            <p>44263 Dortmund</p>
+          </article>
+          <article class="phoneNumber">
+            <img class="iconContact" src="../../assets/images/phone-outline.svg" alt="">
+            <h3>Telefon</h3>
+            <p class="phoneNumber">0231 6283 4369</p>
+            <a href="mailto:info@elegance-smile.de">info@elegance-smile.de</a>
+          </article>
+        </div>
+
+        <article class="premisesArticle">
+          <h3 class="headlinePremisesSection">Unsere Räumlichkeiten</h3>
+          <div class="slideshowContainer">
+            <img class="logoVertical" src="../../assets/images/logo-vertical01.png" alt="">
+            <div id="slideshow">
+              <div class="slide-wrapper">
+                <div class="slide"><img src="../../assets/images/shop1.jpeg" alt=""></div>
+                <div class="slide"><img src="../../assets/images/shop2.jpeg" alt=""></div>
+                <div class="slide"><img src="../../assets/images/shop3.jpeg" alt=""></div>
+              </div>
+            </div>
+            <img class="logoVertical" src="../../assets/images/logo-vertical02.png" alt="">
+          </div>
+        </article>
+      </div>
+    </section>
+  </main>
+  
+  <footer>
+    <div>
+      <p class="followUsParagraph">Folgt uns!</p>
+      <a href="https://www.instagram.com/elegance.smile/">
+        <img src="assets/images/insta1.svg">
+      </a>
+      <a href="https://www.tiktok.com/@elegancesmiledortmund">
+        <img src="assets/images/tik_tok1.svg">
+      </a>
+      <a href="https://www.facebook.com/profile.php?id=61558802338622&paipv=0&eav=AfY_71R_pGWnxg_ra6wKCHVqObaDJTJ004W8XivmiMbwEDawLRkOfPoSZ-DdTO-z3I8">
+        <img src="../../assets/images/facebook1.svg">
+      </a>
     </div>
-  </div>
-
-</div>
-
-
-<div class="mainText1Flex" id="test">
-  <h1 class="headline1">
-    Lass deine Zähne für dich sprechen<br><strong>Mit einer professionellen Zahnaufhellung!</strong>
-  </h1>
-
-  <div class="janinefont">
-    <img src="assets/images/janinefont.png" width="400px">
-  </div>
-</div>
-<!--  Aufzählung-->
-<div class="mainText1FlexRight">
-  <ul class="enum1" >
-    <li style=" margin: 15px 0px;">Strahlend schön: Individuelle Aufhellung bis 12 Nuancen</li>
-    <li>Expertise trifft Komfort: Zertifiziertes Bleaching in stilvollem Ambiente</li>
-    <li>Sanfte Methoden, schmerzfreie Behandlung: Ihr Lächeln in besten Händen</li>
-  </ul>
-  <h1 style="font-family: gilroy">Wir beraten dich gerne!</h1>
-</div>
-
-<!--  Spacer-->
-<div style="margin-top: 50px"></div>
-
-<div class="paketeHeadline" style="text-align: left; margin-left: 5%">
-  <p>
-    Wichtige Informationen zur Behandlung
-  </p>
-  <div class="unterstrich1" style="text-align: left; margin-left: 0"></div>
-</div>
-
-<div style="flex: 1">
-  <img src="assets/images/smile_karte1.PNG" width="300">
-</div>
-
-<!--  Spacer-->
-<div style="margin-top: 20px"></div>
-
-<div style="text-align: left; font-family: gilroy; font-size: 14px; padding-right: 5%; padding-left: 5%">
-  <p>
-    Eine kosmetische Zahnaufhellung funktioniert am Besten bei natürlichen Zähnen. Zu beachten sind Zahnersatz, Kronen
-    Veneers oder Füllungen. Diese werden wieder in ihren ursprünglichen Farbton aufgehellt.
-  </p>
-  <p>
-    Direkt nach der Behandlung empfehlen wir zwei Stunden auf Essen und Trinken zu verzichten, da die Wirkstoffe
-    noch nachwirken.
-  </p>
-  <p>
-    Die Behandlung darf nicht bei Schwangeren oder Frauen in der Stillzeit sowie Patienten mit Chemotherapie
-    durchgeführt werden.
-  </p>
-</div>
-
-<!--  Spacer-->
-<div style="margin-top: 50px"></div>
-
-<!--  Unsere Zahnaufhellungspakete-->
-<div class="centerPaketeDiv" style="text-align: left">
-  <div class="paketeHeadline" style="text-align: left; margin-left: 5%">
-    <p>
-      Unsere Zahnaufhellungspakete
-    </p>
-    <div class="unterstrich1" style="text-align: left; margin-left: 0"></div>
-  </div>
-</div>
-
-<!--  Spacer-->
-<div style="margin-top: 50px"></div>
-
-<div>
-  <p class="paketeOffersHeadlineColor">ELEGANCE SMILE LIGHT</p>
-</div>
-
-<div style="height: 100px">
-  <div class="paketeOffersMainText">
-    <p>
-      Zahnaufhellung in 40 Minuten<br>
-      Zwei Gel-Anwendungen <br>
-      Aufhellung bis zu 5-6 Farbnuancen
-    </p>
-  </div>
-
-  <p class="paketeOffersHeadlineColor">65,00 €</p>
-  <div class="paketeOffersUnterstrich"></div>
-
-</div>
-
-<!--      ELEGANCE SMILE PREMIUM-->
-<div class="flex1WhenFullScreen">
-  <p class="paketeOffersHeadlineColor">ELEGANCE SMILE PREMIUM</p>
-
-  <div style="height: 60px">
-    <div class="paketeOffersMainText">
-      <p style="padding-left: 15%; padding-right: 15%">
-        Unsere Premium Zahnaufhellung - von uns empfohlen.
-        Zahnaufhellung in 60 Minuten<br>
-        Drei Gel-Anwendungen <br>
-        Aufhellung bis zu 8 Farbnuancen
-      </p>
+    <div>
+      <a routerLink="/impressum" routerLinkActive="active">Impressum</a>
+      <a routerLink="/datenschutz" routerLinkActive="active">Datenschutzerklärung</a>
     </div>
-  </div>
-
-  <p class="paketeOffersHeadlineColor">115,00 €</p>
-  <div class="paketeOffersUnterstrich"></div>
-</div>
-
-<!--      ELEGANCE SMILE ULTRA-->
-<div class="flex1WhenFullScreen">
-  <p class="paketeOffersHeadlineColor">ELEGANCE SMILE ULTRA</p>
-
-  <div style="height: 60px">
-    <div class="paketeOffersMainText">
-      <p style="padding-left: 15%; padding-right: 15%">
-        Unser Ultra Paket - für ein maximales Erlebnis.
-        Zahnaufhellung in 80 Minuten<br>
-        Drei Gel-Anwendungen <br>
-        Aufhellung bis zu 12 Farbnuancen
-      </p>
-    </div>
-  </div>
-
-  <p class="paketeOffersHeadlineColor">155,00 €</p>
-  <div class="paketeOffersUnterstrich"></div>
-
-</div>
-
-<!--  Spacer-->
-<div style="margin-top: 50px"></div>
-
-<!--  UNSERE KOMBIPAKETE-->
-<div class="centerPaketeDiv" style="text-align: left">
-  <div class="paketeHeadline" style="text-align: left; margin-left: 5%">
-    <p>
-      Unsere Kombipakete
-    </p>
-    <div class="unterstrich1" style="text-align: left; margin-left: 0"></div>
-  </div>
-</div>
-
-<!--  Spacer-->
-<div style="margin-top: 50px"></div>
-
-
-<!--      ELEGANCE SMILE COMPLETE-->
-<div class="flex1WhenFullScreen">
-  <p class="paketeOffersHeadlineColor">ELEGANCE SMILE COMPLETE</p>
-
-  <div style="height: 60px">
-    <div class="paketeOffersMainText">
-      <p style="padding-left: 15%; padding-right: 15%">
-        Kosmetische Zahnreinigung.<br>
-        Zahnaufhellung in 60 Minuten<br>
-        Drei Gel-Anwendungen <br>
-        Aufhellung bis zu 12 Farbnuancen
-      </p>
-    </div>
-  </div>
-
-  <p class="paketeOffersHeadlineColor">180,00 €</p>
-  <div class="paketeOffersUnterstrich"></div>
-
-</div>
-
-
-<!--      ELEGANCE SMILE COMPLETE PREMIUM-->
-<div style="flex: 1">
-  <p class="paketeOffersHeadlineColor">ELEGANCE SMILE COMPLETE PREMIUM</p>
-
-  <div style="height: 60px">
-    <div class="paketeOffersMainText">
-      <p>
-        Kosmetische Zahnreinigung<br>
-        Zahnaufhellung in 80 Minuten<br>
-        Drei Gel-Anwendungen <br>
-        Aufhellung bis zu 12 Farbnuancen
-      </p>
-    </div>
-  </div>
-
-  <p class="paketeOffersHeadlineColor">200,00 €</p>
-  <div class="paketeOffersUnterstrich"></div>
-
-</div>
-
-<!--  Spacer-->
-<div style="margin-top: 50px"></div>
-
-<!--  Zahnschmuck-->
-<div class="centerPaketeDiv" style="text-align: left">
-  <div class="paketeHeadline" style="text-align: left; margin-left: 5%">
-    <p>
-      Zahnschmuck
-    </p>
-    <div class="unterstrich1" style="text-align: left; margin-left: 0"></div>
-  </div>
-</div>
-
-<!--PACKAGE-->
-<div style="flex: 1">
-
-  <div style="height: 150px">
-    <div class="paketeOffersMainText">
-      <p>
-        Verleihe Deinen Zähnen einen <br>
-        funkelnden Glanz und mache Dein<br>
-        Lächeln zu einem echten Hingucker.<br>
-        Ob funkelnde Kristalle oder elegante<br>
-        Goldakzente - wir haben für jeden<br>
-        Geschmack das passende Design.<br><br>
-        Besuche uns und entdecke die <br>
-        Vielfalt an Zahnschmuck, der Deine<br>
-        Zähne zum Strahlen bringt.
-      </p>
-    </div>
-  </div>
-
-  <p class="paketeOffersHeadlineColor">ab 29,00 €</p>
-  <div class="paketeOffersUnterstrich"></div>
-
-</div>
-
-<!--  Spacer-->
-<div style="margin-top: 50px"></div>
-
-<!--KOSMETISCHE ZAHNREINIGUNG-->
-<div class="centerPaketeDiv" style="text-align: left">
-  <div class="paketeHeadline" style="text-align: left; margin-left: 5%">
-    <p>
-      Kosmetische Zahnreinigung
-    </p>
-    <div class="unterstrich1" style="text-align: left; margin-left: 0"></div>
-  </div>
-</div>
-
-
-<!--PACKAGE-->
-<div style="flex: 1">
-
-  <div style="height: 110px">
-    <div class="paketeOffersMainText">
-      <p>
-        Erlebe das Gefühl sauberer,<br>
-        strahlender Zähne mit unserer<br>
-        professionellen kosmetischen<br>
-        Zahnreinigung. Sie entfernt<br>
-        hartnäckige Beläge und<br>
-        Verfärbungen, die durch Kaffee,<br>
-        Tee oder Tabak entstanden sind.
-      </p>
-    </div>
-  </div>
-
-  <p class="paketeOffersHeadlineColor">40,00 €</p>
-  <div class="paketeOffersUnterstrich"></div>
-
-</div>
-
-<!--  Spacer-->
-<div style="margin-top: 50px"></div>
-
-<!--  Disclaimer-->
-<div class="centerPaketeDiv" >
-  <div style="display: flex;text-align: left; margin-left: 5%">
-    <div style="flex: 1">
-      <p class="paketeOffersHeadlineColor">
-        <b>(Keine Zahnsteinentfernung und Diagnoseerstellung)</b>
-      </p>
-    </div>
-    <div style="flex: 1">
-    </div>
-  </div>
-</div>
-
-<!--  Spacer-->
-<div style="margin-top: 50px"></div>
-
-<div>
-  <div class="paketeHeadline" style="text-align: left; margin-left: 5%">
-    <p>
-      Über mich
-    </p>
-    <div class="unterstrich1" style="text-align: left; margin-left: 0"></div>
-  </div>
-</div>
-
-<!--  Spacer-->
-<div style="margin-top: 30px"></div>
-
-<div>
-  <img src="assets/images/janine3.png" width="300" style="border-radius: 70%">
-</div>
-
-<!--  Spacer-->
-<div style="margin-top: 30px"></div>
-
-<!--TEXTBODY-->
-<div>
-  <p style="font-family: gilroy; text-align: left; padding-left: 5%; padding-right: 5%">
-    Seit 2012 bin ich im Bereich der Zahnmedizinischen Fachangestellten tätig.<br>
-    Im Jahr 2015 habe ich meine Ausbildung erfolgreich abgeschlossen und arbeite nun seit über 12 Jahren in diesem Beruf.<br>
-    In dieser Zeit habe ich wertvolle Erfahrungen  gesammelt.<br>
-    Ich habe mich auf den Bereich der kosmetischen Zahnaufhellung fokussiert und im April 2024 meine eigene Vision umgesetzt, <br>
-    indem ich mein eigenes Studio eröffnet habe.<br>
-    Durch meine Weiterbildung zur Dentalkosmetikerin, die ich im Mai 2024 erfolgreich absolviert habe, <br>
-    haben meine Kunden das nötige Vertrauen, dass sie eine fachgerecht durchgeführte Behandlung genießen können.<br>
-    Für mich ist es ganz wichtig, dass meine Kunden mit der Behandlung und dem Ergebnis zufrieden sind, <br>
-    denn nur dann bin ich auch glücklich.<br><br>
-
-    Ich stehe Euch für eine kostenlose Beratung jederzeit zur Verfügung.
-  </p>
-</div>
-
-
-
-
-
-<!--FILLER-->
-<div style="height: 500px;background-color: green">
-  weffewwef
-</div>
-
-<!--RIGHT ICONS-->
-<div style="position: fixed; right: 0; top: 50%; margin-right: 5%;">
-  <div class="image-container">
-    <svg width="60" height="60" viewBox="0 0 60 60" style="margin-top: 10px;">
-      <circle cx="30" cy="30" r="25" fill="#b08720" stroke="#e0e0e0" stroke-width="2" />
-      <image href="assets/images/schedule.svg" width="40" height="40" x="10" y="10" />
-    </svg>
-  </div>
-  <div class="image-container">
-    <svg width="60" height="60" viewBox="0 0 60 60" style="margin-top: 10px;">
-      <circle cx="30" cy="30" r="25" fill="#b08720" stroke="#e0e0e0" stroke-width="2" />
-      <image href="assets/images/whatsapp.svg" width="40" height="40" x="10" y="10" />
-    </svg>
-  </div>
+  </footer>
 </div>
 
 
